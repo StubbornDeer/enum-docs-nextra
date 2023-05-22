@@ -99,12 +99,13 @@ export function Navbar({ flatDirectories, items }: NavBarProps): ReactElement {
       />
       <nav className="nx-mx-auto nx-flex nx-h-[var(--nextra-navbar-height)] nx-max-w-[90rem] nx-items-center nx-justify-end nx-gap-2 nx-pl-[max(env(safe-area-inset-left),1.5rem)] nx-pr-[max(env(safe-area-inset-right),1.5rem)]">
         {config.logoLink ? (
-          <Anchor
+          <a
             href={typeof config.logoLink === 'string' ? config.logoLink : '/'}
             className="nx-flex nx-items-center hover:nx-opacity-75 ltr:nx-mr-auto rtl:nx-ml-auto"
+            target="_blank"
           >
             {renderComponent(config.logo)}
-          </Anchor>
+          </a>
         ) : (
           <div className="nx-flex nx-items-center ltr:nx-mr-auto rtl:nx-ml-auto">
             {renderComponent(config.logo)}
