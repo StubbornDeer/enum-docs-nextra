@@ -1,5 +1,4 @@
 export default {
-    test: 'aaa',
     logo: (
         <>
             <img width="24" height="24" src="https://www.enumhq.com/images/logo.png"/>
