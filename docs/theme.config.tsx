@@ -3,7 +3,7 @@ import { useConfig } from 'nextra-theme-docs'
 import { useRouter } from 'next/router'
 
 const logo = (
-    <div className="nx-flex nx-items-cente">
+    <div className="nx-flex nx-items-center">
         <img style={{height:'16px', width: '16px'}} src="https://www.enumhq.com/images/logo.png"/>
         <span style={{ marginLeft: '.4em', fontWeight: 800 }}>
             enum
@@ -103,7 +103,7 @@ const config: DocsThemeConfig = {
             title="Enum Tech"
             href="https://enumhq.com"
           >
-            <div className="nx-flex nx-items-cente">
+            <div className="nx-flex nx-items-center">
                 <img style={{height:'16px', width: '16px'}} src="https://www.enumhq.com/images/logo.png"/>
                 <span style={{ marginLeft: '.4em', fontWeight: 800 }}>
                     enum
