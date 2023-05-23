@@ -15,6 +15,7 @@ const config: DocsThemeConfig = {
   project: {
     link: 'https://enumhq.com'
   },
+  logoLink: 'https://enumhq.com',
   //docsRepositoryBase: 'https://github.com/shuding/nextra/tree/main/docs',
   useNextSeoProps() {
     const { asPath } = useRouter()
