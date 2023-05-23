@@ -275,8 +275,8 @@ export const DEFAULT_THEME: DocsThemeConfig = {
     labels: 'bug'
   },
   primaryHue: {
-    dark: 204,
-    light: 212
+    dark: 234,//204,
+    light: 258//212
   },
   project: {
     icon: (
