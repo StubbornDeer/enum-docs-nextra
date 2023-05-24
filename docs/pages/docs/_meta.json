@@ -1,9 +1,5 @@
 {
     "index": "Introduction",
-    "-- Plugins": {
-      "type": "separator",
-      "title": "Plugins"
-    },
     "guide": "Guide",
     "chat-plugins": "Chat plugins"
 }
