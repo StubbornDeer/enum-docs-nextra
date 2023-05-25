@@ -102,7 +102,7 @@ export function Navbar({ flatDirectories, items }: NavBarProps): ReactElement {
           <a
             href={typeof config.logoLink === 'string' ? config.logoLink : '/'}
             className="nx-flex nx-items-center hover:nx-opacity-75 ltr:nx-mr-auto rtl:nx-ml-auto logo-link-yes"
-            target="_blank"
+            target="_self"
           >
             {renderComponent(config.logo)}
           </a>
