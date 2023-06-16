@@ -1,4 +1,105 @@
+import { Callout, Steps } from 'nextra-theme-docs';
+
 # Get Started
+## Registration
+<Steps>
+  ### 1. 
+  Navigate to https://app.enumhq.com/auth/register, enter your user name, email, and password. Please read the [terms of use](https://www.enumhq.com/terms) and our [privacy policy](https://www.enumhq.com/privacy) before registering.
+  
+  ![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/51ee2460-a000-49d7-b664-23b66c2a4bbf)
 
-Here we will write the details of how to get started with Enum. Stay tuned!
+  ### 2. 
+  Check your mailbox, find the email from us (it's going to the spam folder, sometimes), and click the link to confirm your email address. You will be redirected to the login page. Enter your email and password, and get in.
+</Steps>
 
+## Change your settings
+After your successfully logged in, you will be redirected to the dashboard. If you already have the OpenAI key, you can enter it to unlock unlimited questions and have a choice for the models.
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/aed60bfd-49d6-435d-b4b0-e3f9e26ffb52)
+
+If you don't enter the OpenAI key, the only "gpt-3.5-turbo" is available:
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/2c4e7bd8-0e4f-4b4d-9a23-9b2ec666c0b4)
+
+Change your settings and click the *Save settings* button.
+
+  <Callout>
+We do not store your OpenAI key nor your password as a text. We encrypted them with SHA-256 algorithm which is almost impossible to crack.
+  </Callout>
+
+## Create a project
+A *project* is a place where you add the datasources of the same topics. For example, you may a separate project for your project, or a website, or a group of websites. Check [the corresponding page](https://www.enumhq.com/docs/guide/projects) for more details.
+
+<Callout>
+ **The important note** : we search the answer within a project only. Also, a user interface is linked to a project so is the linking to chatbot.
+</Callout>
+
+You may create as many projects as you want.
+  <Callout>
+While formally we do not restrict the number of projects you can create, we reserve the right to suspend or even block your account if we see that you are abusing the provided capabilities.
+  </Callout>
+  
+To add a new project, click the *My projects* menu item on the left menu bar, then click the *All projects* link and the *Add a project* button. 
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/12bce434-ca3f-4917-acac-dc5ba57ac9bb)
+
+In the showing popup enter the name and description (optional), then click the *OK* button:
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/441f62d0-164a-4dfe-922e-36dc4768f4ba)
+
+You will be redirected to the project's page with an empty list of data sources.
+ 
+## Add a data source
+As soon as a project is created you may add the data source. A *data source* is a piece of information to be indexed and searched by our engine. Read more on [the data source documentation page](https://www.enumhq.com/docs/guide/data-sources).
+
+ Click the "Add a new source" button and then select the corresponding type of data sources:
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/5407348c-fac1-4a47-b9a3-b15b9a90267a)
+
+<Callout>
+  At the moment, you can add data sources of 3 types: PDF file, plain text, or a web site.
+ </Callout>
+
+After you select a file, click the *Add this source* button:
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/75570050-c149-4443-ab92-b88d7d325a1b)
+
+<Callout>
+  If file is big, the indexing (that is extracting the text, splitting into pieces and saving in our special database) can take some time. If you lose the Internet connection during the process or accidentally close the popup, don't worry. The indexing will keep going as it's done asynchronously and doesn't depend on the Internet connection. You always can check the status later.
+ </Callout>
+ 
+ Here is how a new data source looks if you close the popup before the indexing finishes:
+ 
+ ![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/759c17a5-a170-44b0-96b7-9b2141204b86)
+
+After the process of indexing ends, the popup disappears and you will see the new datasource with its status and number of tokens it has (you can read more on tokens [here](https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them)).
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/cb622162-56c1-435b-a567-f8b1f2580033)
+
+That's it! You can start asking questions on your documents.
+
+### Ask questions in UI
+
+To ask questions in our UI, please click the *Interactions* submenu of a project, :
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/45698a4a-ec98-455d-8a9a-b7bb69c9b649)
+
+then start a new chat:
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/fd94cbf2-fd82-4fa0-baa2-de33bca1558e)
+
+Every response is coming with the amount of spent tokens as well as the current model used for responding:
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/a3fd7abd-3a6e-4029-bb34-ae0cb59b6077)
+
+<Callout>
+  You can choose the model in the General settings (in the left menu) or in the project's settings.
+ </Callout>
+
+### Allow your users to ask questions - via a smart chatbot
+
+If you already are using the [Crisp](https://crisp.chat) chat box for your website, you may consider adding a smart bot to your website to allow your users ask the questions when you are out of the office:
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/45fad69d-2fc6-484b-9d0c-de996256fe5c)
+
+Please find the information on installation and setup of Crisp chatbot on the [corresponding page](https://www.enumhq.com/docs/chat-plugins/crisp).
