@@ -1,0 +1,16 @@
+import { Callout, Steps } from 'nextra-theme-docs';
+
+# How Enum Works
+
+Enum allows you to explore your own documents, and uses the power of ChatGPT to get a useful answers made in human-alike manner. But how it works? The whole process includes several steps, let's review them:
+
+<Steps>
+  ## Indexing data sources
+  When you add a data source, whatever it is, our engine looks for a text, then split it into chunks, and saves into a special data storage (we use so-called vector database). It allows the system finds the pieces of text maximally relevant to a user's query.
+  
+  ## User makes a query
+  Our system looks for the relevant chunks of text. The search is based on so-called embeddings, when found text is relevant to the questions no matter which words are used for a question.
+  
+  ## Sending data to ChatGPT
+  Then the found pieces of text are sent to ChatGPT which extract the answer from them, and sends it back. This method of providing the specific source of information that ChatGPT doesn't know yet, is called "in-context learning". Curious minds can read more some [scientific papers](http://ai.stanford.edu/blog/understanding-incontext/).
+ </Steps>
