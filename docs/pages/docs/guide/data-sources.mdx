@@ -37,9 +37,15 @@ If you accidentally select a non-PDF file, it will be ignored.
 </Callout>
 
 ### Web site
+You may enter the full URL, or a subfolder, or even specify pages manually. Let's review all these options:
+
+![image](https://github.com/StubbornDeer/public-media-files/assets/91156314/bfe97803-9ea3-4233-af77-60c4cc77ec6d)
+
+#### All pages within a domain (automatically)
+
 We can parse load the data from a website. The workflow of the process is:
 
-1. You enter a website's URL
+1. Enter a website's URL
 2. Our system crawls it and find all the links belonging to the same domain, excluding broken or private links.
 3. You then may select which webpages to include into the indexing.
 
@@ -49,11 +55,8 @@ Let's see how it works:
 ### Enter a URL
   We enter a website URL and click the "Start page indexing" what runs the crawler:
 
-![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/b328432c-099b-4a2f-a79f-eb95d1ff31d2)
+![image](https://github.com/StubbornDeer/public-media-files/assets/91156314/f84c0ef0-493e-493c-830e-aacb62804d46)
 
-It launches the crawler:
-
-![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/31a66e58-64ed-452d-a341-a752a5d36d5f)
 
 <Callout>
 If a website has multiple pages, the process of indexing can take some time.
@@ -62,17 +65,46 @@ If a website has multiple pages, the process of indexing can take some time.
 ### Select pages to be indexed
 Select/unselect pages for indexing. Use the "Check all" and "Uncheck all" if needed:
 
-![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/6b0c6c82-bd4c-4cbd-948e-539b6a43be88)
+![image](https://github.com/StubbornDeer/public-media-files/assets/91156314/74395efc-d048-4b84-bcde-1a97c23789cc)
 
+<Callout>
+As you can see here, you are informed how many pages you can select accordingly to your current plan.
+</Callout>
 
 ### Run indexing
-  Click the "Add this source" button to start the indexing:
+  Click the "Add this source" button to start the indexing (reading the text content and adding to the database):
 
-![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/3fe227bc-c5f5-4a9f-ac9c-3aaa8a2cd55f)
+![image](https://github.com/StubbornDeer/public-media-files/assets/91156314/16e28a62-ef2e-4d1f-a924-7da7ef0d7943)
 
 
-When a datasource is added successfully, you will see the green tick and amount of indexed tokens:
+When a data source is added successfully, you will see the green tick and amount of indexed tokens:
 
 ![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/c3dc8cd5-abc8-4ec3-aedc-eb8607ccbd27)
 
+<Callout>
+If you know your website has many pages whereas the crawler finds only one or two, we probably hit one of the problems that currently, we don't solve:
+
+- Your website is protected by Cloudflare
+- the content on your website is formed dynamically (that is, by some JavaScript code).
+To get more information on those issues, please click the "Too few pages" button (see the image below): 
+</Callout>
+
+![image](https://github.com/StubbornDeer/public-media-files/assets/91156314/3aa21737-382c-4796-a96a-e4c7f91279e3)
+
 </Steps>
+
+#### Only within a specific path (like inside of a folder), automatically
+
+You enter a path you want all the pages under would be indexed:
+
+![image](https://github.com/StubbornDeer/public-media-files/assets/91156314/563f864e-ece6-45a6-8a3f-212529fdb305)
+
+#### 
+
+Enter a URL in the corresponding input and click the plus button:
+
+![image](https://github.com/StubbornDeer/public-media-files/assets/91156314/b4b12a7a-555a-4b81-a595-d9654dd37caf)
+
+You can add as many pages as you want within your limits.
+
+
