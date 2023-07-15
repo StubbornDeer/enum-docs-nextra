@@ -2,7 +2,7 @@ import { Callout, Steps } from 'nextra-theme-docs';
 
 # Chatbot plugin for Crisp 
 
-## What is Crisp
+## What is Crisp?
 
 [Crisp](https://crisp.chat) is the all-in-one business messaging platform that gathers teams, conversations, data and knowledge, around one place.
 
