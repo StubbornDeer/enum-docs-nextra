@@ -69,4 +69,23 @@ You can specify what the chatbot should say when it:
   <img width="288" alt="image" src="https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/a2478bd5-2e9b-4674-9490-c12c20c3d1a8">
 
   
+### Paused sessions
 
+<img width="737" alt="image" src="https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/6e0b35a3-6119-42b1-a7fd-6a32608238c8">
+
+Here you will see data regarding any chat sessions in which AI has been deactivated due to an agent joing the conversation (if you have the setting toggled on)
+
+
+
+Use the chat page button to jump into the active chat inside Crisp:
+
+![Screenshot 2023-07-15 131042](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/2ea929e0-9497-4e51-b321-6f1284439832)
+
+
+Click "Run again" to reactive the AI in the paused session:
+
+![Screenshot 2023-07-15 131042 2](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/c6d86e8a-7535-4f14-9969-4caa8e86a008)
+
+The AI will resume answering questions; however, if you join the conversation again, the AI chatbot will deactivate again.
+
+<img width="296" alt="image" src="https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/a2fb9210-1a97-4337-8142-a2fe97266bea">
