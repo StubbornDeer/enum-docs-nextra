@@ -1,23 +1,23 @@
 import { Callout, Steps } from 'nextra-theme-docs';
 
-# Chatbot plugin for Crisp 
+# Installing the chatbot Crisp plugin
 
-## What is Crisp
+## What is Crisp?
 
-[Crisp](https://crisp.chat) is the all-in-one business messaging platform that gathers teams, conversations, data and knowledge, around one place.
+[Crisp](https://crisp.chat) is an all-in-one business messaging platform that gathers teams, conversations, data and knowledge in one place.
 
-## What is the Support AI ChatBot plugin
+## What is the Support AI ChatBot plugin?
 
-We created this plugin to allow your users and visitors to ask questions on your website, your product, and any other materials and data without your participation.
+We created this plugin to allow your users and visitors to ask questions on your website about your company, product, and any other materials and data without the need for you to be there.
 
-Why is that so useful? There are several reasons:
+What are the benifits?
 
-1. You don't have to be before your computer 24/7
-2. Our chatbot may answer the questions much faster than you would.
-3. Our chatbot may answer the questions in more precise manner.
-4. Our chatbot is based on ChatGPT (currently) so it's much, much smarter than usual chatbot is.
+1. You don't have to be at your computer 24/7, without the risk of losing customers.
+2. Our chatbot can answer the questions much faster than you would.
+3. Our chatbot can answer the questions in more precise manner.
+4. Our chatbot is based on ChatGPT (currently) so it's much smarter than a usual chatbot.
 
-To run the chatbot you don't need to create a long, not-very-reliable workflows. All you need is just to register at [Enum](https://enumhq.com), create a new project, upload files, enter a plain text or/and scrap your own website. You also need to install this plugin, of course.
+To run the chatbot you don't need to create long, unreliable workflows. All you need is to simply register at [Enum](https://enumhq.com), upload files and/or scrape your own website. You also need to install this plugin, of course.
 
 So, here is the full guide on installing and running your smart chatbot:
 
@@ -25,7 +25,7 @@ So, here is the full guide on installing and running your smart chatbot:
 ### Crisp
   
   1. To register and install the chatbox on Crisp, please follow the Crisp documentation
-  2. Set up the account and create the chatbox for your website, then add the corresponding code to your website. It's a pretty straightforward process, please refer to [the comprehensive article](https://help.crisp.chat/en/article/how-to-add-a-live-chat-to-my-website-10wcj3l/).
+  2. Set up an account and create a chatbox for your website, then add the corresponding code to your website. It's a pretty straightforward process, please refer to [the comprehensive article](https://help.crisp.chat/en/article/how-to-add-a-live-chat-to-my-website-10wcj3l/).
 
   
 ### Install the Enum plugin
@@ -80,38 +80,3 @@ Now you can change some settings that will help make your chatbot more "intellig
 ![image](https://github.com/StubbornDeer/public-media-files/assets/91156314/aa367b8d-6b28-44a5-a361-41a307cdfbdf)
 
 </Steps>
-
-## Chatbot settings
-
-### Disable the plugin temporarily
-
-![image](https://github.com/StubbornDeer/public-media-files/assets/91156314/06bc03b1-b960-4d33-a610-f087d8fc6cfb)
-
-  ### Chatbot default responses
-You can specify what the chatbot should say when it:
-
-1. doesn't know the answer
-2. was asked to talk to a human.
-
-![image](https://github.com/StubbornDeer/public-media-files/assets/91156314/6b96c49a-7920-4669-873c-5d24cb81ce78)
-
-### Chatbot icon
-  You may choose from 3 options:
-  
-  - the default Crisp userpic
-  - a "cute" Enum robot userpic
-  - your own URL to a userpic.
-  
-  Default Crisp userpic:
-  
-  ![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/370cc93c-8eb4-49b8-9d33-676b13b02c99)
-
-  
-  a cure robot:
-  
-  ![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/c1a4e2f7-e3a7-4620-b40d-8b074f1b4727)
-
-  
-  your own URL:
-  
-  ![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/e799c9cf-47c7-4f55-b519-90a9e2500dd1)
