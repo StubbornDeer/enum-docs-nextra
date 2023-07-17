@@ -2,18 +2,18 @@
 
 Here you can change some parameters to customize your chatbot.
 
-<img width="732" alt="image" src="https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/35fcfb95-db5a-42ee-a31a-c14fbd94ac58">
+<img alt="image" src="https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/35fcfb95-db5a-42ee-a31a-c14fbd94ac58">
 
 ### Disable the plugin temporarily
 
 Selecting this option disables the AI bot, so you can speak to your customers without its presence.
 
-<img width="335" alt="image" src="https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/306444ef-a42e-448a-a2a5-871d71f75d13">
+<img alt="image" src="https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/306444ef-a42e-448a-a2a5-871d71f75d13">
 
 
   ### Chatbot default responses
 
-  <img width="255" alt="image" src="https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/7307715d-bcee-4b8d-98a5-3db57068abc8">
+  <img alt="image" src="https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/7307715d-bcee-4b8d-98a5-3db57068abc8">
 
   
 You can specify what the chatbot should say when it:
