@@ -2,18 +2,23 @@
 
 Here you can change some parameters to customize your chatbot.
 
-![](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/35fcfb95-db5a-42ee-a31a-c14fbd94ac58)
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/909bb66c-fd91-4057-a7b5-2da364ec5757)
+
 
 ### Disable the plugin temporarily
 
 Selecting this option disables the AI bot, so you can speak to your customers without its presence.
 
-![](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/306444ef-a42e-448a-a2a5-871d71f75d13)
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/e482bbf2-ef82-46bf-93b3-144e96e5127c)
+
+
 
 
   ### Chatbot default responses
 
-![](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/7307715d-bcee-4b8d-98a5-3db57068abc8)
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/3b6f590a-e17c-499d-830d-e604fb7e1c6d)
+
 
   
 You can specify what the chatbot should say when it:
@@ -21,13 +26,14 @@ You can specify what the chatbot should say when it:
 1. Doesn't know the answer
 2. Is asked to talk to a human.
 
-![](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/c969cc60-63a1-436e-bc68-e2c89d35856d)
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/c1b67450-d12f-4a9b-bcd2-4d34f6be4083)
+
 
 
 
 ### Chatbot icon
 
-![](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/01d4bb9c-3b10-4333-b050-3799c068c5f8)
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/a1401d5d-9943-48f5-ab64-e7d62623d04c)
 
 
   You may choose from 3 options:
@@ -38,19 +44,21 @@ You can specify what the chatbot should say when it:
   
   Default Crisp userpic:
   
-![](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/986926ff-fb6c-4fae-8f74-36e3de695304)
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/5a903c4f-f974-45e6-96fd-aed450d30ac5)
+
 
 
   
   a cute robot:
   
-![](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/dc636f0a-e249-45ac-a6ff-3c44cc656268)
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/8f669673-8ed4-4646-b89a-7281b4362766)
+
 
 
   
   your own URL:
   
-![](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/3bed8a23-0a73-4e43-a1ad-75f709a5bd1a)
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/e57db858-3b7d-44be-8a5d-91a24645ffbf)
 
 
 
@@ -58,7 +66,8 @@ You can specify what the chatbot should say when it:
 
 ### Chatbot behaviour settings
 
-![](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/29bcd8d4-68e9-4e7c-b7d2-b368a2f8ca09)
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/e5ec658d-d2da-49b0-86fa-260e8d6b9e86)
+
 
 1. Translate chatbot responses.
    - If a customer asks a question in a foreign language, the chatbot will reply in the respective language if setting is activated.
@@ -66,7 +75,8 @@ You can specify what the chatbot should say when it:
 3. Turn the chatbot off when an agent joins the conversation
    - If toggled on, this setting will deactive the AI from the customer session, if an agent joins the conversation, allowing you to communicate to customers without the AI present.
 
-![](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/a2478bd5-2e9b-4674-9490-c12c20c3d1a8)
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/3b09a0b8-3999-4fcb-822f-6d768753bc06)
+
 
   
 ### Paused sessions
@@ -79,13 +89,16 @@ Here you will see data regarding any chat sessions in which AI has been deactiva
 
 Use the chat page button to jump into the active chat inside Crisp:
 
-![Screenshot 2023-07-15 131042](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/2ea929e0-9497-4e51-b321-6f1284439832)
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/931a5c90-bdd4-4dab-b540-805dc8fc1e33)
+
 
 
 Click "Run again" to reactive the AI in the paused session:
 
-![Screenshot 2023-07-15 131042 2](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/c6d86e8a-7535-4f14-9969-4caa8e86a008)
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/b6ab0205-79c9-45e3-a437-6dbd1b3f2380)
+
 
 The AI will resume answering questions; however, if you join the conversation again, the AI chatbot will deactivate again.
 
-![](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/a2fb9210-1a97-4337-8142-a2fe97266bea)
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/0eb4d116-c527-46bd-9fc8-c41d4b97f72e)
+
