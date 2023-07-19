@@ -13,3 +13,7 @@
 f
 
 ![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/b1fd295a-291a-4ef8-b9ea-802ca7d7397f)
+
+testing lightshot
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/e3ba8aa8-21f2-496f-a6d4-fc0a1c1fc321)
