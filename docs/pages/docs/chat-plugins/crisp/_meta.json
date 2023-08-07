@@ -1,4 +1,5 @@
 {
-    "crisp-installation": "Installation Crisp chatbot plugin",
-  "crisp-settings": "Configuring the chatbot"
+  "why": "Why Crisp chatbot?",
+    "crisp-installation": "Plugin installation",
+  "crisp-settings": "Settings"
 }
