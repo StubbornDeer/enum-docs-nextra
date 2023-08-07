@@ -1,19 +1,25 @@
-# Why Crisp chatbot?
+import { Callout, Steps } from 'nextra-theme-docs';
 
-![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/6ba481da-8ebb-41f6-b9d5-db051dca1153)
+# What is the Crisp chatbox?
 
-<img width="374" alt="image" src="https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/6a1b325f-1404-45dc-ae01-55f69e366e38">
+The (Crisp)[https://crisp.chat] chat is a great tool that provides a channel to communicate with your users. 
 
-![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/f3ad8afb-0fc4-4b01-92bc-d23d2815adc9)
+Basically, it's a chatbox that can be installed on your website.
 
-![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/aa50a25e-10c1-4be6-a70a-57e8b4548347)
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/93222558-78c0-4058-b8f0-b9ac019b2a78)
 
-![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/656079d7-f0cc-411d-b7c8-60b9ce5a03f8)
+To install it, you just copy a small code snippet onto your web page:
 
-f
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/a515944a-0984-40b9-9552-f744a013525c)
 
-![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/b1fd295a-291a-4ef8-b9ea-802ca7d7397f)
+Then you configure its settings in your Crisp dashboard:
 
-testing lightshot
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/0be10a33-144b-4ca9-a4b4-b354fdd4727f)
 
-![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/e3ba8aa8-21f2-496f-a6d4-fc0a1c1fc321)
+<Callout>
+Please refer to [the Crisp user guide](https://help.crisp.chat/en/article/getting-started-with-crisp-for-customer-support-1ts8txn/) for details on the installation and configuration of your chatbot.
+</Callout>
+
+# Why Crisp chatbox?
+
+We found Crisp pretty versatile and mature product that can save you not only your users but a lot of time. Crisp has a free tier which makes it perfect for small projects and businesses. Also, it has a developed plugin infrastructure that allows us, as a third-party company, to develop pretty complicated solutions that will amplify and enrich your experience.
