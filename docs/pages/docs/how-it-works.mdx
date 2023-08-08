@@ -2,15 +2,23 @@ import { Callout, Steps } from 'nextra-theme-docs';
 
 # How Enum Works
 
-Enum allows you to explore your own documents, and uses the power of ChatGPT to get a useful answers made in human-alike manner. But how it works? The whole process includes several steps, let's review them:
+Enum allows you to explore your own documents and uses the power of ChatGPT to get useful answers made in human-like manner. But how it works? The whole process includes several steps, let's review them:
 
 <Steps>
   ### Indexing data sources
-  When you add a data source, whatever it is, our engine looks for a text, then split it into chunks, and saves into a special data storage (we use so-called vector database). It allows the system finds the pieces of text maximally relevant to a user's query.
+  When you add a data source, whatever it is, our engine looks for a text, then split it into chunks, and saves it into a special data storage (we use a so-called vector database). It allows the system finds the pieces of text maximally relevant to a user's query.
   
   ### User makes a query
-  Our system looks for the relevant chunks of text. The search is based on so-called embeddings, when found text is relevant to the questions no matter which words are used for a question.
+  Our system looks for the relevant chunks of text. The search is based on so-called embeddings when found text is relevant to the questions no matter which words are used for a question.
   
   ### Sending data to ChatGPT
-  Then the found pieces of text are sent to ChatGPT which extract the answer from them, and sends it back. This method of providing the specific source of information that ChatGPT doesn't know yet, is called "in-context learning". Curious minds can read more some [scientific papers](http://ai.stanford.edu/blog/understanding-incontext/).
+  Then the found pieces of text are sent to ChatGPT which extracts the answer from them and sends it back. This method of providing the specific source of information that ChatGPT doesn't know yet, is called "in-context learning". Curious minds can read more some [scientific papers](http://ai.stanford.edu/blog/understanding-incontext/).
+
+### Sending the user a response
+Our chatbot engine gets the answer from ChatGPT and sends it back to the user. The user experience may be improved in many ways we support now:
+
+- Custom icon, custom messages
+- Automation: when an agent joins the conversation, the chatbot is paused (you can then run the paused session again, from our UI)
+- The chatbot responds in the user's language (currently, we support 107 languages)
+- The response can be riched with the relevant links (to activate this feature you have you re-index existing data sources).
  </Steps>
