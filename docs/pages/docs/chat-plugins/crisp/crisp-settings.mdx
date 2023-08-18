@@ -4,10 +4,11 @@ import { Callout, Steps } from 'nextra-theme-docs';
 
 Here you can change the parameters to customize your chatbot and its behavior.
 
-![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/66a03ac4-fdeb-4d0b-91d6-056cddcb573c)
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/90e47b8b-d617-426e-8fa2-b93c26a477bc)
+
 
 ### General settings
-Here, you can control the availability of the chatbot and set up custom messages.
+Here, you can control the availability of the chatbot and its automatic behavior.
 
 #### Disable the plugin temporarily
 
@@ -15,19 +16,28 @@ Selecting this option disables the AI bot, so you can speak to your customers wi
 
 ![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/e482bbf2-ef82-46bf-93b3-144e96e5127c)
 
+#### Data source information
+If you want the chatbot to include the most relevant links in its response, check the *Show source links in response* checkbox.
+<Callout>
+This checkbox is turned off by default.
+</Callout>
+This is how the response with links looks:
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/03342743-2538-42df-890e-7c4e8f291c65)
+
+
+<Callout>Please note, we provide only the links but Crisp chatbox renders the first one based on the metatags that can be found on the webpage.</Callout>
+
+We include 5 found links, the first one is marked as "Source", and others as "Additional sources". The titles are automatically translated into the user's language:
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/dfd9aa31-5ade-476f-aef8-5df7bd6291c0)
 
 #### Chatbot default responses
 
 ![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/3b6f590a-e17c-499d-830d-e604fb7e1c6d)
 
 
-  
-You can specify what the chatbot should say when it:
-
-1. Doesn't know the answer
-2. Is asked to talk to a human.
-
-![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/c1b67450-d12f-4a9b-bcd2-4d34f6be4083)
+<Callout>Attention! These settings were moved to the project's.</Callout>
 
 #### Chatbot automation
 Use the *Turn the chatbot off when an agent joins the conversation* checkbox to provide the pausing of the chatbot as soon as an agent joins the conversation.
@@ -38,11 +48,13 @@ This checkbox is turned on by default.
 
 All the paused sessions can be found on the *Paused sessions* tab, more information is below.
 
+#### Waiting for Crisp Triggers
+If you use the Crisp Trigger, you may want to ask the chatbot to wait for N seconds (4, by default) - in this case, if a trigger is fired and sends its message to the user's chatbox, the chatbot will not respond at all. It allows you to avoid sending duplicate messages.
+
 ### Widget settings
 Here, you specify how your chatbot and its responses look:
 
-![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/889285f7-b59b-421b-a09c-e72ebfec920d)
-
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/831d2e64-801e-404c-9e8d-e149387cbfed)
 
 #### Chatbot icon
 
@@ -68,22 +80,10 @@ Here, you specify how your chatbot and its responses look:
   
 ![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/e57db858-3b7d-44be-8a5d-91a24645ffbf)
 
-#### Data source information
-If you want the chatbot to include the most relevant links in its response, check the *Show source links in response* checkbox.
-<Callout>
-This checkbox is turned off by default.
-</Callout>
-This is how the response with links looks:
+#### Chatbot name
+This name is shown as grey text beside the chatbot's icon. On a paid plan, you may leave it empty or enter your name.
 
-![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/03342743-2538-42df-890e-7c4e8f291c65)
-
-
-<Callout>Please note, we provide only the links but Crisp chatbox renders the first one based on the metatags that can be found on the webpage.</Callout>
-
-We include 5 found links, the first one is marked as "Source", and others as "Additional sources". The titles are automatically translated into the user's language:
-
-![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/dfd9aa31-5ade-476f-aef8-5df7bd6291c0)
-
+<Callout>This setting is disabled for the free plan.</Callout>
   
 ### Paused sessions
 
