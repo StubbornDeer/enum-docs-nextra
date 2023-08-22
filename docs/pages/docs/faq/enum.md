@@ -28,3 +28,12 @@ Please follow the [Crisp guide](https://help.crisp.chat/en/article/how-to-add-a-
 #### How do I connect the Crisp chatbot and Enum?
 Please follow [our guide on installing the Crisp plugin](https://www.enumhq.com/docs/chat-plugins/crisp/crisp-installation).
 
+#### My chatbot isn't working!
+There are several reasons why it may not work for.
+
+1) Check if your chatbot is enabled.
+
+
+
+2) 
+3) 
