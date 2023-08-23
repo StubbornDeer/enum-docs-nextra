@@ -85,6 +85,26 @@ This name is shown as grey text beside the chatbot's icon. You may leave it empt
 
 ![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/9c6306a6-ff8f-4572-b86f-ab247c503d01)
   
+### Custom behavior
+You can specify some additional actions that the bot will do if a specific event happens. Right now, you can send email(s) and set up a custom response when a user asks for human assistance.
+Move to the "Custom behaviour" tab, you will see one empty event:
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/a2d10e12-1a70-4277-9a13-278c72df12ad)
+
+
+Click the *Add an action* button and select one of the following options:
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/653b2e53-c6fd-4fb7-86fb-db3cdb4c23b8)
+
+Click the *Add email button* and enter an email, then press the Return key. You can add multiple emails. When at least one email is added the green envelope icon is shown in the header, for your information:
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/3ef35636-240f-41af-9d0d-91ee5d2d1fe1)
+
+To add a custom message, click the *Add an action* button again and then enter your custom message. This message works in the same way as that you specify for the project, but has a higher priority for the chatbot.
+
+To remove an action, click the red cross button in the right corner of the action.
+
+<Callout>Don't forget to save settings.</Callout>
 ### Paused sessions
 
 ![](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/6e0b35a3-6119-42b1-a7fd-6a32608238c8)
