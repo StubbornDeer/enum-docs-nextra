@@ -29,11 +29,17 @@ Please follow the [Crisp guide](https://help.crisp.chat/en/article/how-to-add-a-
 Please follow [our guide on installing the Crisp plugin](https://www.enumhq.com/docs/chat-plugins/crisp/crisp-installation).
 
 #### My chatbot isn't working!
-There are several reasons why it may not work for.
+There are several reasons why it may not work (by working we mean the chatbot is answering your users' questions).
 
-1) Check if your chatbot is enabled.
+1) Check if the Enum plugin for Crisp was installed and integrated successfully.
+   If you see this, it means you actually didn't install the plugin:
+
+   ![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/b6d87866-a107-41d3-9c82-0146c3cf6e68)
 
 
+2) Check if your chatbot is enabled.
 
-2) 
-3) 
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/58d95917-c3a8-4827-85ba-a9b271f85cb4)
+
+
+3) Check if you have more than other projects and accounts with the same chatbots. We do not prohibit creating multiple accounts with us (if it doesn't break our terms) but it happens with some of our users that they forgot about already existing accounts with the same bot. When a new message is coming our inner application looks for any project by the website id and there is no guarantee it will be a "right" project. So, if it's your case, just sign in using another browser, then find the project and remove the chatbot you don't want to be confused with.
