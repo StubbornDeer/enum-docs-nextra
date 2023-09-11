@@ -4,17 +4,19 @@ import { Callout, Steps } from 'nextra-theme-docs';
 
 Here you can change the parameters to customize your chatbot and its behavior.
 
-![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/90e47b8b-d617-426e-8fa2-b93c26a477bc)
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/df154410-4b27-4552-9038-3631d2b51ad5)
+
 
 
 ### General settings
-Here, you can control the availability of the chatbot and its automatic behavior.
+Here, you can control the availability of the chatbot and whether to include the links to the responses.
 
 #### Disable the plugin temporarily
 
-Selecting this option disables the AI bot, so you can speak to your customers without its presence.
+Selecting this option disables the AI bot, so you can speak to your customers without its interruptions.
 
-![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/e482bbf2-ef82-46bf-93b3-144e96e5127c)
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/dea7ff7f-994b-406b-bd1a-29495dbd51ec)
+
 
 #### Data source information
 If you want the chatbot to include the most relevant links in its response, check the *Show source links in response* checkbox.
@@ -32,29 +34,12 @@ We include 5 found links, the first one is marked as "Source", and others as "Ad
 
 ![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/dfd9aa31-5ade-476f-aef8-5df7bd6291c0)
 
-#### Chatbot default responses
-
-![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/3b6f590a-e17c-499d-830d-e604fb7e1c6d)
-
-
-<Callout>Attention! These settings were moved to the project's.</Callout>
-
-#### Chatbot automation
-Use the *Turn the chatbot off when an agent joins the conversation* checkbox to provide the pausing of the chatbot as soon as an agent joins the conversation.
-
-<Callout>
-This checkbox is turned on by default.
-</Callout>
-
-All the paused sessions can be found on the *Paused sessions* tab, more information is below.
-
-#### Waiting for Crisp Triggers
-If you use the Crisp Trigger, you may want to ask the chatbot to wait for N seconds (4, by default) - in this case, if a trigger is fired and sends its message to the user's chatbox, the chatbot will not respond at all. It allows you to avoid sending duplicate messages.
 
 ### Widget settings
 Here, you specify how your chatbot and its responses look:
 
-![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/831d2e64-801e-404c-9e8d-e149387cbfed)
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/01019f79-136d-400b-99e0-d6262904c891)
+
 
 #### Chatbot icon
 
@@ -84,32 +69,77 @@ Here, you specify how your chatbot and its responses look:
 This name is shown as grey text beside the chatbot's icon. You may leave it empty or enter your chatbot/company name.
 
 ![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/9c6306a6-ff8f-4572-b86f-ab247c503d01)
-  
-### Custom behavior
-You can specify some additional actions that the bot will do if a specific event happens. Right now, you can send email(s) and set up a custom response when a user asks for human assistance.
-Move to the "Custom behaviour" tab, you will see one empty event:
 
-![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/a2d10e12-1a70-4277-9a13-278c72df12ad)
+### Custom behaviour & Automation
+
+Here are 3 sections, all collapsed by default:
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/ecbb74f9-b8ef-485c-8a1e-94ba6d30da04)
+
+#### Chatbot in session
+Here you define your chatbot's automatic behaviour during the sessions:
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/bd878ab0-4dbc-4a6d-aeb6-70674cf3dbba)
 
 
-Click the *Add an action* button and select one of the following options:
+1. *Pause the chatbot when agent joins the conversation*
 
-![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/653b2e53-c6fd-4fb7-86fb-db3cdb4c23b8)
+If this checkbox is checked, then every time when you or your agents join a conversation with the chatbot, the chatbot will be quiet.
 
-Click the *Add email button* and enter an email, then press the Return key. You can add multiple emails. When at least one email is added the green envelope icon is shown in the header, for your information:
+<Callout>
+All the paused sessions can be found on the *Paused sessions* tab, more information is below. To re-run the session in semi-automatic mode, use the next option.
+</Callout>
 
-![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/3ef35636-240f-41af-9d0d-91ee5d2d1fe1)
+2. *Re-run chatbot when conversation is resolved*
 
-To add a custom message, click the *Add an action* button again and then enter your custom message. This message works in the same way as that you specify for the project, but has a higher priority for the chatbot.
+This indicates to re-run the chatbot when you click the "Mark this conversation as resolved" in the Crisp dashboard:
 
-To remove an action, click the red cross button in the right corner of the action.
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/12941fcf-34e9-4449-b81b-bc3a03fa1d29)
 
-<Callout>Don't forget to save settings.</Callout>
+
+3. *Send this message when re-running chatbot*
+
+It's a good idea to let your user know that the chatbot is running again so they can enjoy your support 24/7.
+
+
+#### User requests human assistance
+Specify what the chatbot should do when user wants to talk to human beings.
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/7454e7f6-4496-4656-bc64-c3aa34850b16)
+
+1. *Send this message when user requests for human*
+
+  Enter a message you want to be sent to the chat when a user requests human assistance. Usually, it's just an information that humans will join the conversation soon.
+
+2. *Notify me when user requests assistance*
+
+Currently, you can only send email(s) to notify you that somebody waits for you (we will add more notification channels in the future).
+
+To add an email, click the "Add a notification" button, enter email, and press the Return button.
+
+Here is the example notification sent by email:
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/5cfe7f85-59ad-432d-9c21-8f597e06f353)
+
+
+#### Coordinate the chatbot with Crisp Triggers
+If you use Crisp triggers, you may consider using these options to avoid duplicating answers (from triggers and the chatbot).
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/4057fe35-3a67-47da-88f2-123dc0ac879c)
+
+1. *Wait for Crisp Trigger response*
+Check this option to make the chatbot wait for the trigger's response. If not checked, the chatbot will answer without waiting.
+
+2. *Wait time (in seconds) for Crisp Trigger response*
+Specify how many seconds to wait. From our experience, 4 seconds is good but you may find it too fast or too slow, depending on your trigger's parameters.
+
+
 ### Paused sessions
+
+Here you will see data regarding any chat sessions in which AI has been deactivated due to an agent joining the conversation (if you have the setting toggled on).
 
 ![](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/6e0b35a3-6119-42b1-a7fd-6a32608238c8)
 
-Here you will see data regarding any chat sessions in which AI has been deactivated due to an agent joining the conversation (if you have the setting toggled on).
 
 
 
