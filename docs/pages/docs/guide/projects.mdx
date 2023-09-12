@@ -3,7 +3,7 @@ import { Callout, Steps } from 'nextra-theme-docs';
 # Projects
 
 A project is a place where you add data sources of the same topics. For example, you may have a separate project for your project, a website, or a group of websites. 
-
+ 
 ## Add a new project
 To add a new project, click the *My projects* menu item on the left menu bar, then click the *All projects* link and the *Add a project* button. 
 
@@ -58,6 +58,27 @@ Please note, that using your own OpenAI key and AI models (including GPT-4) are 
 <Callout>
   If you specify both models - in the General settings and for a project, the project model is prevalent.
 </Callout>
+
+<Callout>
+  Creating a good prompt could be tricky. But now we provided several pieces of advice, to read them please click the *Good prompts: tips & tricks* icon, and the side panel will be open.
+</Callout>
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/8aae9f9b-200d-4d1b-8d6c-d81b2ae95e7b)
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/05426410-6653-4d2d-b68f-2b4a81ae1004)
+
+### Using metadata
+You now can add metadata in the prompt, currently, the language of the question is available. If you want the chatbot to answer always in the language of question (that is detected automatically), use the following syntax:
+
+```
+... Answer in the {language} language.
+```
+
+Just add the "language" word wrapped with curly brackets, and then, during the preprocessing of your prompt, it will be converted into a normal string (the exact value varies according to the question's language):
+
+```
+... Answer in the French language.
+```
 
 ## Deleting project
 If you scroll down to the end of the settings page you will see the "danger zone":
