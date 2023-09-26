@@ -72,9 +72,10 @@ This name is shown as grey text beside the chatbot's icon. You may leave it empt
 
 ### Custom behaviour & Automation
 
-Here are 3 sections, all collapsed by default:
+Here are 4 sections, all collapsed by default:
 
-![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/ecbb74f9-b8ef-485c-8a1e-94ba6d30da04)
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/1aa3e301-d21a-4a7c-80d6-2e85f4cd95cc)
+
 
 #### Chatbot in session
 Here you define your chatbot's automatic behaviour during the sessions:
@@ -133,13 +134,57 @@ Check this option to make the chatbot wait for the trigger's response. If not ch
 2. *Wait time (in seconds) for Crisp Trigger response*
 Specify how many seconds to wait. From our experience, 4 seconds is good but you may find it too fast or too slow, depending on your trigger's parameters.
 
+#### Add standard action buttons to the messages
+
+You can add several buttons to your messages. Below each option, there are preview buttons where you can see how they would look in your chatbox.
+
+<Callout>
+  Please note, that if you show a button, it **must** have a text label (Crisp doesn't allow buttons without text). So, if you remove the text from a field, the default label will be used instead.
+</Callout>
+
+This is how the buttons look for a user:
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/7ef6f23e-c2fc-4513-bd6e-90ab6efe8d81)
+
+
+##### 1. Feedback buttons
+They allow a user to give your chatbot feedback: good or bad. You can enter your own text labels for both buttons:
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/3af03f25-ae0e-4513-9144-0881fc5f360c)
+
+In your Crisp dashboard, you will see the feedback:
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/a6032ef0-0819-459b-a6a5-19df6254a091)
+
+
+##### 2. Mark resolved button
+This button allows a user to mark the conversation resolved (or closed). 
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/448ddd20-d3c8-4cbc-81c3-8ada95b1eea5)
+
+When a user clicks the button, it's resolved what you see in your Crisp dashboard:
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/3fa88034-f647-42e5-b1b9-2decb1af4553)
+
+##### 3. Request a human operator
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/de7e2095-056f-403f-af46-db5af6d8608f)
+
+When a user clicks this button, the corresponding response and notification will be sent if you set them up as described [here](https://www.enumhq.com/docs/chat-plugins/crisp/crisp-settings#user-requests-human-assistance).
+
+<Callout>
+  Sometimes you can see the colorful icons, sometimes not. It all depends on the browser. For example, in Firefox it will look differently:
+  
+  
+  ![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/94287b28-295c-42f7-bbb6-d4c1e4c21bfe)
+
+</Callout>
 
 ### Paused sessions
 
 Here you will see data regarding any chat sessions in which AI has been deactivated due to an agent joining the conversation (if you have the setting toggled on).
 
 ![](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/6e0b35a3-6119-42b1-a7fd-6a32608238c8)
-
 
 
 
