@@ -19,6 +19,14 @@ Let's review all these datasource types.
 
 ### Plain text
 
+After you create a new text data source, you will be redirected to its page:
+
+![Plain text data source](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/45dfadbc-b28f-4d6f-8407-602253d7bbaf)
+
+To save the data source under a specific title, enter it and click the *Save changes* button to save.
+
+The plain text data source can contain multiple pages of text. To add a new page of text, click the *Add text* content button.
+
 Add a new source and select a plain text. Then paste into the window the previously copied text and click the *Add this source* button:
 
 ![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/581155be-f4e7-461f-bfd4-6f87c61aa75f)
