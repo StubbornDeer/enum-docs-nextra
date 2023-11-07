@@ -6,22 +6,33 @@ Enum allows you to explore your own documents and uses the power of ChatGPT to g
 
 <Steps>
   ### Indexing data sources
-  When you add a data source, whatever it is, our engine looks for a text, then split it into chunks, and saves it into a special data storage (we use a so-called vector database). It allows the system finds the pieces of text maximally relevant to a user's query.
+  When you add a data source, whatever it is, our engine looks for a text, then split it into chunks, and saves it into a special data storage (we use a so-called vector database). It allows the system find the pieces of text that are maximally relevant to a user's query.
   
   ### User makes a query
-  Our system looks for the relevant chunks of text. The search is based on so-called embeddings when found text is relevant to the questions no matter which words are used for a question.
+  After getting the user's query (a question) our system looks for the relevant chunks of text. The search is based on so-called embeddings when found text is relevant to the questions no matter which words are used for a question.
   
   ### Sending data to ChatGPT
-  Then the found pieces of text are sent to ChatGPT which extracts the answer from them and sends it back. This method of providing the specific source of information that ChatGPT doesn't know yet, is called "in-context learning". Curious minds can read more some [scientific papers](http://ai.stanford.edu/blog/understanding-incontext/).
+  Then the found pieces of text are sent to ChatGPT which reads them and forms the final answer. This method of providing the specific source of information that ChatGPT doesn't know yet is called "in-context learning". Curious minds can read more [scientific papers](http://ai.stanford.edu/blog/understanding-incontext/).
 
 ### Sending the user a response
-Our chatbot engine gets the answer from ChatGPT and sends it back to the user. The user experience may be improved in many ways we support now:
+Our chatbot engine gets the answer from ChatGPT and sends it back to the user. The user experience may be improved in many ways we are supporting now:
 
-- Conversational AI (the chatbot remembers the context and can keep the conversation)
-- Custom prompts
-- Custom icon, custom chatbot name, custom messages
-- Automation: when an agent joins the conversation, the chatbot is paused (you can then run the paused session again, from our UI)
-- Working with Crisp Triggers side-by-side without hiccups
-- The chatbot responds in the user's language (currently, we support 107 languages)
-- The response can be riched with the relevant links (to activate this feature you have you re-index existing data sources).
+- Easy and fast installation
+- Loading of plain text, PDFs, or entire websites (with automatic scraping, full or partial, including subdomains) or manual URL entry
+- Viewing and editing texts extracted from your data sources
+- Conversational AI
+- Custom chatbot icon
+- Custom chatbot messages
+- Buttons in responses (feedback, request an agent, and resolve the conversation)
+- Links in the response
+- Automatic chatbot deactivation when an agent joins the conversation (you can reactivate it via the Enum dashboard)
+- Automatic re-activating the chatbot when a conversation is resolved
+- Integration with 7 other channels (WhatsApp, Facebook, Email, Instagram and others)
+- Extensive language support, including automatic language detection and the ability to communicate in 107 languages
+- Optional OpenAI key usage
+- GPT model of your choice (gpt-4 is available on plans with your own OpenAI key)
+- Secure integration with Crisp
+- Integration with Crip's triggers
+- Ability to ask questions about your data before plugin installation, directly in the Enum dashboard
+- Live testing your Crisp chatbot, right in the Enum dashboard.
  </Steps>
