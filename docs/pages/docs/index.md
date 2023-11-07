@@ -15,10 +15,10 @@ The very first step to start working with Enum is to register.
   <Card image arrow title="Registration" href="/docs/guide/get-started">
     <>![Registration process](/assets/register.png)</>
   </Card>
+  <Card image arrow title="Set up the Crisp AI chatbot" href="/docs/chat-plugins/crisp/crisp-installation">
+    <>![Set up the Crisp AI chatbot](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/5f8a8213-60ff-4f02-9df1-457ac837e345)</>
+  </Card>
   <Card image arrow title="Adding projects and data sources" href="/docs/guide/projects">
     <>![Adding data sources](/assets/datasources.png)</>
-  </Card>
-  <Card image arrow title="Set up the Crisp AI chatbot" href="/docs/chat-plugins/crisp">
-    <>![Set up the Crisp AI chatbot](/assets/chatbot-in-action.png)</>
   </Card>
 </Cards>
