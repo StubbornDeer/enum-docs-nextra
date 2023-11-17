@@ -26,34 +26,44 @@ After you create a new text data source, you will be redirected to its page:
 To save the data source under a specific title, enter it and click the *Save changes* button to save.
 
 The plain text data source can contain multiple pages of text. To add a new page of text, click the *Add text* content button.
+In the modal window, enter the title and the content of a data source:
 
-Add a new source and select a plain text. Then paste into the window the previously copied text and click the *Add this source* button:
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/74b6b317-287f-4796-826d-0897836cc9de)
 
-![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/581155be-f4e7-461f-bfd4-6f87c61aa75f)
-
-<Callout>
-For a plain text, we can calculate the number of tokens before loading, for your information.
-</Callout>
+Then click the *Save & Index* button to save the changes and immediately index the content in our database to by used later by the chatbot.
 
 ### PDF files
-Select or drug one or more PDF files in the new datasource popup:
+When you select to create a file-based data source, just click the *Select or drag file(s)*, select your file, then click the *Upload* button.
 
-![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/0d65a321-4f4a-4cff-86bf-fd3d752315ae)
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/dfbe3858-2c00-441b-9185-3041c0d4bce4)
+
+The process of uploading followed by indexing will start. You will something like that while it's in progress:
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/2512492d-255e-4833-9831-10f77b2f7815)
+
+When it's done you can click on a page to review and edit the text content:
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/dd734032-c5bb-4999-92de-3a63fc02037b)
+
 
 <Callout>
 If you accidentally select a non-PDF file, it will be ignored.
 </Callout>
 
-### Web site
-You may enter the full URL, or a subfolder, or even specify pages manually. Let's review all these options:
-
-![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/421ccbcd-a972-4e6f-8270-9cbf975f9618)
-
 <Callout>
-Note, you can enter an URL without a protocol "https://". But if you enter a bare URL, we will add an "https" protocol by default:
+Currently, only one file is allowed to be uploaded per data source.
 </Callout>
 
-![image](https://github.com/StubbornDeer/public-media-files/assets/91156314/ea03156f-a074-4c91-982f-626bcbf25646)
+### Web site
+You may enter the full URL, or a subfolder, or even specify pages manually. Another option is to use the sitemap file. Let's review all these options:
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/68b7f6f3-b920-41ca-9507-0972b8f3211c)
+
+
+<Callout>
+Note, you can enter an URL without a protocol "https://". But if you enter a bare URL, we will add an "https" protocol by default.
+</Callout>
+
 
 #### All pages within a domain (automatically)
 
