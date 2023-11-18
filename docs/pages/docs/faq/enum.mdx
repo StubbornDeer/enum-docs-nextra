@@ -13,13 +13,39 @@ We launched in May 2023.
 #### How did you come up with the idea?
 The founder, Katherine Mitrich (Kleymenova) came up with this idea several years ago, after 6-hour waiting in the queue to resolve an issue with the Internet provider. That time, she tried to find a way to connect existing chat solutions with AI but failed. In 2023, as soon as ChatGPT came out, she remembered the old idea - this is how the Enum was born.
 
+### Payments and subscriptions
+
+#### If I use my own OpenAI key on a "Key" plan, why should I pay you?
+You pay a small fee that partially covers the costs of running our service. You probably don't know but under the hood, it's a very complicated and pretty expensive system containing many elements such as databases, hosting our web application, and connecting to other services (for example, in some cases, we use a paid crawling service to make the process of crawling websites smoother).
+
 ### AI and ChatGPT
+
+#### Where do I enter an OpenAI key?
+You enter it in your account's settings;
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/b273d2dc-b083-4b44-bd72-bb7403b1c999)
+
+#### Is it safe to enter my OpenAI key and then save it in your system?
+We store all such information (like the OpenAI key and your password encrypted). Of course, nowadays, there is always some risk of data breach but currently, it would be pretty hard to crack all these keys - we use the SHA-256 algorithm which is almost impossible to crack.
+
+#### Where do I select an OpenAI model to be used?
+It can be selected in 2 places:
+
+1. In your account settings:
+
+  ![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/7af9ba26-25fa-4d4e-b254-95fd49b82290)
+
+2. In your project's settings:
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/16f557fb-adfb-438b-839f-6df5a9b1e0b7)
+
+Why do we have these settings in two different places? You may want to set a model for most of your projects, like a default one, and then set a different model for a specific project.
 
 #### Which AI do you use?
 We generate answers via [OpenAI ChatGPT](https://openai.com/chatgpt).
 
 #### Which models do you use?
-To create embeddings, we use the *text-embedding-ada-002* model. For generating responses, we use the *gpt-3.5-turbo* and *gpt-4* models.
+To create embeddings, we use the *text-embedding-ada-002* model. For generating responses, we use the *gpt-3.5-turbo*, *gpt-4*, and *gpt-4-turbo* models. Please note that two latter models are available for users who bought the "Key" plan.
 
 ## Enum plugin for Crisp
 #### How to install the Crisp chatbot on my website?
@@ -43,3 +69,5 @@ There are several reasons why it may not work (by working we mean the chatbot is
 
 
 3) Check if you have more than other projects and accounts with the same chatbots. We do not prohibit creating multiple accounts with us (if it doesn't break our terms) but it happens with some of our users that they forgot about already existing accounts with the same bot. When a new message is coming our inner application looks for any project by the website id and there is no guarantee it will be a "right" project. So, if it's your case, just sign in using another browser, then find the project and remove the chatbot you don't want to be confused with.
+
+4) Check your OpenAI account (for those who are on the "Key" plan). If you are out of your credits, no more calls to ChatGPT can be made until you pay.
