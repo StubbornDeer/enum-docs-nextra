@@ -61,11 +61,18 @@ You may enter the full URL, or a subfolder, or even specify pages manually. Anot
 
 
 <Callout>
-Note, you can enter an URL without a protocol "https://". But if you enter a bare URL, we will add an "https" protocol by default.
+Note, that you can enter a URL without a protocol "https://". But if you enter a bare URL, we will add an "https" protocol by default.
 </Callout>
 
 
 #### All pages within a domain (automatically)
+When this option is selected, the crawler will look for any links, put them into a special list and then load the pages to find new links. The crawler is optimized in a way to avoid multiple hitting the same pages. As soon as a page is loaded, the crawler saves its content in a special in-memory database. This data will stored there for 7 days. So, if you'd like to just re-index the content of your website for some reason (without re-loading the pages), it will take much less time.
+
+#### Only within a specific path (like inside of a folder), automatically
+You can restrict crawling with just one folder. In this example, we load only pages under the */docs* path:
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/20eb9bf0-65ca-4429-bbdc-47b224528c4e)
+
 
 We can parse  the data from a website. The workflow of the process is:
 
@@ -131,8 +138,42 @@ You enter a path you want all the pages under would be indexed:
 
 ![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/16feecd2-c5e0-4255-87d2-92baebdbd4b0)
 
+#### Read pages from site map
+You can enter the exact URL of your website's sitemap file, or even just your website's URL and our system will find a sitemap on its own:
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/dd3283e8-2095-4f73-a40d-6ac808a204c8)
+
+<Callout>
+  Note, we can find the sitemap files automatically only if their name is common and one of those: 
+  - 'sitemap.xml',
+  -  'sitemap.xml.gz',
+  -  'sitemap_index.xml',
+  -  'sitemap-index.xml',
+  -  'sitemap_index.xml.gz',
+  -  'sitemap-index.xml.gz',
+  -  '.sitemap.xml',
+  -  'sitemap',
+  -  'admin/config/search/xmlsitemap',
+  -  'sitemap/sitemap-index.xml'.
+
+  If your sitemap name is unique, please enter it manually.
+</Callout>
 
 #### Manually entered pages
+
+Also, you can enter URLs manually and then click the *plus* button to add them to the list:
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/c572966c-304d-4290-993e-a2996cf59baf)
+
+You can do it any moment but before you start indexing.
+
+### Indexing webpages
+
+As soon as you find or add the pages to be indexed, select them and then click the *Start indexing* button. The stats of indexing pages will be updated automatically. All indexed pages will be unchecked.
+
+<Callout>
+If you select many pages (like thousands) the process could take some significant time. You may close the window and open it later to check the progress. Refresh the page to see the changes.
+</Callout>
 
 Enter a URL in the corresponding input and click the plus button:
 
@@ -140,8 +181,15 @@ Enter a URL in the corresponding input and click the plus button:
 
 
 You can add as many pages as you want within your limits.
+After the indexing is done you will see the updated numbers and icons:
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/9f98ac1c-603c-478f-8716-96c61d096555)
+
 
 ### Re-indexing website
+
+You may completely re-index your website, make crawling from scratch, and then select and re-index pages, or you can change and re-index an individual page as it's done with any other type of data sources.
+
 In some cases, you'd like to re-index your website. For example, if you update your website, or we delivered some functionality that can be activated only during the indexing.
 To re-index your website just click the button on your website card:
 
