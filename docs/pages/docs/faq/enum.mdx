@@ -45,9 +45,10 @@ Why do we have these settings in two different places? You may want to set a mod
 We generate answers via [OpenAI ChatGPT](https://openai.com/chatgpt).
 
 #### Which models do you use?
-To create embeddings, we use the *text-embedding-ada-002* model. For generating responses, we use the *gpt-3.5-turbo*, *gpt-4*, and *gpt-4-turbo* models. Please note that two latter models are available for users who bought the "Key" plan.
+To create embeddings, we use the *text-embedding-ada-002* model. For generating responses, we use the *gpt-3.5-turbo*, *gpt-4*, and *gpt-4-turbo* models. Please note that two latter models are available for users who bought the "Key" plan. Also, lower models like Curie and DaVinci are available.
 
 ## Enum plugin for Crisp
+### General questions
 #### How to install the Crisp chatbot on my website?
 Please follow the [Crisp guide](https://help.crisp.chat/en/article/how-to-add-a-live-chat-to-my-website-10wcj3l/).
 
@@ -71,3 +72,30 @@ There are several reasons why it may not work (by working we mean the chatbot is
 3) Check if you have more than other projects and accounts with the same chatbots. We do not prohibit creating multiple accounts with us (if it doesn't break our terms) but it happens with some of our users that they forgot about already existing accounts with the same bot. When a new message is coming our inner application looks for any project by the website id and there is no guarantee it will be a "right" project. So, if it's your case, just sign in using another browser, then find the project and remove the chatbot you don't want to be confused with.
 
 4) Check your OpenAI account (for those who are on the "Key" plan). If you are out of your credits, no more calls to ChatGPT can be made until you pay.
+
+#### How to prevent the chatbot from interrupting the conversation with an agent?
+There is a setting you can use to pause the chatbot as soon as an agent joins the conversation. It can be found in the chatbot's settings, on the *Custom Behaviour & Automation* tab, in the *Chatbot in session* tab:
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/e7a0dfc8-bcaa-4654-8e7b-802f6377a691)
+
+#### The chatbot's responses are too short (or too verbose), how to fix it?
+You may create a custom prompt where you describe the style of responding. For example, if the responses are too short you may write "Respond in a polite, verbose manner explaining every single detail" or something like that. This setting is available on the project's settings page, on the *AI Settings* tab:
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/6f0e684e-9f29-4686-ad97-ef72ec8a8046)
+
+Here you also can check the *Replace the default prompt* switch (if it's not turned on, your custom prompt will be added to our default prompt).
+
+#### What is the default prompt and should I replace it or not?
+The default prompt is not just a prompt, it's a combination of prompts and code to help achieve the best results while using the ChatGPT. It has such features as language detection and others.
+
+#### Can the chatbot keep a casual conversation?
+Yes, it can. You may ask it about common things, greet, or even invite for a date.
+
+### Crawling and indexing
+
+#### When I crawl my website your system can't find any pages or too few, why?
+There could be several reasons for that:
+
+1. Your website is protected too hard. We already cope with CloudFlare protection but it may be even harder. Check with your provider if they protect your website from crawling by bots.
+2. Your website is dynamic that is the content is loaded by JavaScript dynamically which currently, we are not able to read.
+3. Check if your website should (or should not) use the "www" prefix.
