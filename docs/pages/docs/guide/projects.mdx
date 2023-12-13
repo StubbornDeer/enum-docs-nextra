@@ -27,36 +27,40 @@ As soon as a project is created you may add the data source. A *data source* is 
  </Callout>
 
 ## Project's settings
-After a project is created you may edit some its properties. For a given project, click the *Settings* link:
+After a project is created you may edit some of its properties. For a given project, click the *Settings* link:
 
-![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/bd228e75-901d-42b1-8e6e-f0770c58ab41)
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/65e08c3c-e6b2-4dde-b106-a4a2b670b33c)
 
+### General tab
+Here you can change the project's name and its description.
+The description is used when the project is shown on the Project list:
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/8830a897-5661-43d8-a29c-ececf5722b7f)
+
+### AI Settings
 The second tab has the AI tuning settings. 
 
-![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/f2bf80ee-31cc-495a-a583-b1ae454433c3)
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/cd5ebc03-1448-4cd4-9c57-113de9c1ff7f)
 
-Here you can change:
+Let's review all the settings
 
-- project's name
-- project's description
-- the OpenAI key
-- the ChatGPT model
-- custom prompt and its setting
-- custom messages.
-
-The custom prompt you enter here will be available in both: interaction and the chatbot. If you leave the "Replace the default prompt" switch unchecked, your prompt will be added to our default prompt, else it will be fully replaced.
-
-You can specify what the chatbot should say when it:
-
-1. Doesn't know the answer
-2. Is asked to talk to a human.
+#### ChatGPT Engine and OpenAI Model
+Here you can select what to use for the generating responses: the OpenAI assistant, [a new technology that allows you to upload your own data right in the OpenAI dashboard](https://platform.openai.com/assistants), or a regular OpenAI chat model. If you use the second option, you can then select a model (the default model is ChatGPT-3.5-Turbo). The GPT-4 and GPT-4 Turbo are available.
 
 <Callout>
-Please note, that using your own OpenAI key and AI models (including GPT-4) are available only for the "Key" plan.
+  Please note that these options are available only for the "Key" plan. The reason is because ChatGPT assistant and ChatGPT-4 models are still very expensive, so you use them at your own risk.
+</Callout>
+<Callout>
+  Don't forget to enter the OpenAI key which is available in the account's settings (can be found at the bottom of the left menu).
 </Callout>
 
+#### Custom prompt
+This section has 2 options:
+- the text of your custom prompt
+- the switch to replace the default prompt (that one we use by default) with your prompt.
+
 <Callout>
-  If you specify both models - in the General settings and for a project, the project model is prevalent.
+  Our default prompt is not only a piece of text but it's a combination of logic, code, and text. As it is our intellectual property, it can't be shared.
 </Callout>
 
 <Callout>
@@ -66,6 +70,26 @@ Please note, that using your own OpenAI key and AI models (including GPT-4) are 
 ![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/8aae9f9b-200d-4d1b-8d6c-d81b2ae95e7b)
 
 ![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/05426410-6653-4d2d-b68f-2b4a81ae1004)
+
+#### Custom messages
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/dc6c53c5-90f6-4cbb-97e5-fcd12ebd1226)
+
+Here you can enter messages as a guide for the chatbot on what to say when it doesn't know an answer, and when is asked for human assistance.
+
+<Callout>
+  You can set up these messages that will be used in all your chatbots for the current project unless you provide the same messages for a separate chatbot which has a higher priority.
+</Callout>
+
+#### Fine tuning
+
+These settings are used for the fine-tuning data to be passed to ChatGPT as context.
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/fbb21915-aac0-4121-b205-dae197848f28)
+
+- chunk size is the amount of bytes to be stored and to be obtained from the index database to form context data (the default number is 256 bytes which usually works great but in some cases, other amount, say, 1024 bytes works better)
+- amount of chunks to send as context - the number of pieces that will be sent as context. The more the number the better but sometimes it can be more that the OpenAI threshold what can cause an error.
+
 
 ### Using metadata
 You now can add metadata in the prompt, currently, the language of the question is available. If you want the chatbot to answer always in the language of question (that is detected automatically), use the following syntax:
