@@ -2,7 +2,7 @@ import { Callout, Steps } from 'nextra-theme-docs';
 
 # Data Sources
 
-Data sources are where you provide the system access to your data. When you load any text information into the system, it reads the text, split into chunks, and upload in a special storage (currently, we user a vector database). When a user query comes, we looks in the datastore to find the most fitting chunks, and then pass them to the ChatGPT engine which looks for an answer and build a human-like response.
+Data sources are where you provide the system access to your data. When you load any text information into the system, it reads the text, splits it into chunks, and uploads in a special storage (currently, we user a vector database). When a user query comes, we looks in the datastore to find the most fitting chunks, and then pass them to the ChatGPT engine which looks for an answer and build a human-like response.
 
 ## Add a data source
 As soon as a project is created you may add the data source. A *data source* is a piece of information to be indexed and searched by our engine. Read more on [the data source documentation page](https://www.enumhq.com/docs/guide/data-sources).
@@ -128,6 +128,16 @@ After the indexing is done you will see the updated numbers and icons:
 
 ![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/9f98ac1c-603c-478f-8716-96c61d096555)
 
+#### Indexing parameters
+You can specify if you want data to be stored densely, or sparced. Sometimes, when parsing a website, our system leaves a lot of empty space between text data (that looks like empty lines). Usually, it doesn't affect to the chatbot's quality but sometimes, removing these gaps could improve it significantly. 
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/7cbb65fc-0489-441b-990e-364f2eddf4f8)
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/32539841-ed6f-4bba-8443-2b6bf3a575d0)
+
+
+Change it before indexing. If you already index your data, please re-index to see if this parameter affects the chatbot's quality.
+
 
 ### Re-indexing website
 
@@ -142,6 +152,17 @@ To re-index the whole website, just select the pages to be indexed and click the
 You may want to mark some pages as ignored. It can be done at any moment. The ignored pages will not be indexed or crawled. To mark a page as ignored, just click on the button in the corresponding column:
 
 ![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/610fe79e-aa48-402c-9979-97976b5ddad9)
+
+### Deleting data
+
+You can completely delete the data obtained from some pages, from the index database. To do so, just select pages, then click the *Remove page data* button. You will have to confirm your intent to delete this data.
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/ae1b2eb8-6cfa-4318-b2d5-7cac89fa22b2)
+
+<Callout>
+If you accidentally deleted page data or changed your mind, you always can re-index them again. To avoid indexing these pages in the future, mark them as ingored.
+</Callout>
+
 
 To remove this flag, click on the same button again.
 
