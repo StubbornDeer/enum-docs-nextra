@@ -34,3 +34,25 @@ If you decide to move to another plan, just click the *Select this plan* button.
 <Callout>
   If you think you may get the refund for unused days if you cancel or change the current subscription, please let us know at [info@enumhq.com](info@enumhq.com).
 </Callout>
+
+## Change your payment information
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/8ae58a52-1c4c-4c2f-9e5f-1adc7d2bb188)
+
+
+You can change your payment information such as credit card. Just click the *Payment method* tab and then click the *Update my payment method* button. You will be redirected to the Stripe page:
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/26db131f-9e9f-4bfd-9586-03675cd8751f)
+
+Make changes, then click the *Save card* button and you will be redirected back (you may cancel the process at any moment and just click the Enum logo on the top to be redirected back to the dashboard).
+
+## Review your invoices and download them
+The fourth tab has the list of your invoices:
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/27aa191f-fac7-4d5b-b77b-e06020fddbd2)
+
+If you click the *Receipt/invoice page* link the corresponding invoice page will be opened in a new tab. Use the links to download the recept and invoice:
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/c39b09b8-287e-49e6-8ae2-07fe2643a032)
+
+
