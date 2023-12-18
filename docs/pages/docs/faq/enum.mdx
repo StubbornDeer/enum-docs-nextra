@@ -29,6 +29,9 @@ You enter it in your account's settings;
 #### Is it safe to enter my OpenAI key and then save it in your system?
 We store all such information (like the OpenAI key and your password encrypted). Of course, nowadays, there is always some risk of data breach but currently, it would be pretty hard to crack all these keys - we use the SHA-256 algorithm which is almost impossible to crack.
 
+#### If I use my own OpenAI key, is there any difference in the responses?
+When you use your own OpenAI key, you also can choose another model, say ChatGPT-4. This model shows better results (but it's much more expensive). If you stay with the GPT-3.5 model, the result will be the same.
+
 #### Where do I select an OpenAI model to be used?
 It can be selected in 2 places:
 
@@ -53,6 +56,12 @@ To create embeddings, we use the *text-embedding-ada-002* model. For generating 
 #### How to install the Crisp chatbot on my website?
 Please follow the [Crisp guide](https://help.crisp.chat/en/article/how-to-add-a-live-chat-to-my-website-10wcj3l/).
 
+#### I can't see the Enum plugin on Crisp's marketplace anymore, what does it mean?
+Sometimes (pretty rarely, though) we started working on big changes that can't be deployed immediately. Crisp may require us to hide the plugin from the market if it's not production-ready. If it happens it means we will be there again as soon as we prepare the plugin to be ready for public.
+
+#### Does the chatbot understand other than English, languages?
+Yes, it does. It automatically detects the language and answers in the corresponding language. It also translates the buttons. Currently, we can translate in 107 languages.
+
 #### How do I connect the Crisp chatbot and Enum?
 Please follow [our guide on installing the Crisp plugin](https://www.enumhq.com/docs/chat-plugins/crisp/crisp-installation).
 
@@ -73,6 +82,10 @@ There are several reasons why it may not work (by working we mean the chatbot is
 3) Check if you have more than other projects and accounts with the same chatbots. We do not prohibit creating multiple accounts with us (if it doesn't break our terms) but it happens with some of our users that they forgot about already existing accounts with the same bot. When a new message is coming our inner application looks for any project by the website id and there is no guarantee it will be a "right" project. So, if it's your case, just sign in using another browser, then find the project and remove the chatbot you don't want to be confused with.
 
 4) Check your OpenAI account (for those who are on the "Key" plan). If you are out of your credits, no more calls to ChatGPT can be made until you pay.
+
+5) Check if your sessions are in the list of paused sessions (the corresponding tab of your chatbot). The chatbot can be paused if you set up the corresponding flags and they worked, for instance, when an agent joins the conversation, the chatbot can be paused.
+
+6) Check the schedule for your chatbot - it may be exact the timeslot when it's paused.
 
 #### How to prevent the chatbot from interrupting the conversation with an agent?
 There is a setting you can use to pause the chatbot as soon as an agent joins the conversation. It can be found in the chatbot's settings, on the *Custom Behaviour & Automation* tab, in the *Chatbot in session* tab:
