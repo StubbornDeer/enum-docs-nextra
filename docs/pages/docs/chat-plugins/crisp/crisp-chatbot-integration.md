@@ -64,8 +64,45 @@ The very first condition we want to add will determine if the user just started 
 ![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/abd75177-d274-4f98-ac71-ec7a95400bea)
 
 6. **Condition for our new clients**
-   
-We want our new clients to be served by chatbot immediately but first we need to determine their segment.
+
+  We want our new clients to be served by chatbot immediately but first, we need to determine their segment.  Add another condition block but this time the type is "Contact" and the block is "Contact Segments?":
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/58339256-0302-4146-86f4-eb360b020aad)
+
+Then click on the block and you will see a menu over it, click the *Edit* button:
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/0758ffc4-d9e1-4edb-92a7-cb75fc238ec8)
+
+Leave the condition as is ("Contains any") and in the value input print "new":
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/16c72246-07f1-4cac-b774-400d80cc5a71)
+
+
+8. **Send the signal to Enum**
+
+We want our "new" users to be served by the Enum chatbot. To make it happen, we have to send the corresponding signal to the Enum. By default, the Enum chatbot starts working as soon as user sends the first message, and in the next section, we will show you how to change this behavior. Now, let's add the action block, then select the "Update User" type and block "Update Custom Data"
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/8574af27-77eb-4aa8-b4ed-3b4ea758e7d2)
+
+In the left menu, enter the following data: key "enum" and value "start_chatbot", then press Enter to save changes.
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/fb2b94ab-6681-406e-b704-8aaf641d3ddf)
+
+
+9. **Add an information message**
+
+Immediately after you send the signal to the Enum chatbot, it will start working. You may add here the message that will inform the enum that the AI assistant started. Drag a new action block, select the "Send Message" type, then the "Send message" block. In the menu on the left, enter the corresponding message:
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/5aa1ea57-d170-4e12-af09-3a9a3803f78e)
+
+
+10. **Add the condition for advanced users**
+
+Drag another condition block to the canvas, and select the Conversation segments block. In its properties enter the "advanced" value and press Enter to save changes. Then click to the beginning of the block and drag the connection to the "Conversation is new?" block:
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/ead2588e-868f-4938-8b55-d6878713a5c3)
+
+11.
 
 ### 
 
