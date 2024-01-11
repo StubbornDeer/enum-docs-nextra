@@ -144,7 +144,7 @@ then the *Deploy*:
 
 
 16. **Add the start settings in the Enum**
-In the Enum dashboard, open your chatbot page, move to the *Custom behaviour & Automation* tab, then to the *Integration with Crisp chatbot workflow* section. Select the second option *Wait for signal from Crisp chatbot or the user to start* and click the *Save* button. Doing so, we say the Enum chatbot "Do not start answering questions until you have a signal" and the signal will be updating "user data" which we did in the steps 8 and 
+In the Enum dashboard, open your chatbot page, move to the *Custom behaviour & Automation* tab, then to the *Integration with Crisp chatbot workflow* section. Select the second option *Wait for signal from Crisp chatbot or the user to start* and click the *Save* button. Doing so, we say to the Enum chatbot "Do not start answering questions until you have a signal" and the signal will be updating "user data" which we did in the steps 8 and 
 
 ![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/9ff76251-3f39-4370-9f34-c231259a41ec)
 
@@ -152,6 +152,35 @@ That's it!
 
 17. **Test the chatbots integration**
 
-### 
+You can test the workflow you've just created, right in the Enum dashboard. Move to the *Live test* tab of your chatbot's properties, then click the *Show Crisp chatbox button* and the Crisp button will be shown on the right pane. Then try to simulate the user's behavior to see the result.
+
+<Callout>
+  If you want to test the user when there is no assigned segment yet, try to use this hack:
+
+1. Temporarily change the condition block where you determine the segment: instead of "Contains any" select "Doesn't contain any" value:
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/e2a7bed1-4646-4304-ab04-54a3494a220b)
+
+This condition will work for any user without an assigned segment.
+
+2. Open the Enum dashboard in the browser's private window - it will create a new Crisp conversation (you will have to login again). 
+
+</Callout>
+
 
 ## List of commands that can be sent to Enum chatbot
+
+### Values for buttons
+You can assign buttons specific values that will be sent as soon as the user clicks on them. This approach can be used instead of setting *User Custom Data*:
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/c9a2732f-5fa5-48ca-959a-bbfea86654ed)
+
+Recognized values:
+
+- enum:start_chatbot
+- enum:pause_chatbot
+
+### Values for User Custom Data:
+
+- key: enum, value: start_chatbot
+- key: enum, value: pause_chatbot
