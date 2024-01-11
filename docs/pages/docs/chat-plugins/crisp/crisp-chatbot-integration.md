@@ -80,7 +80,7 @@ Leave the condition as is ("Contains any") and in the value input print "new":
 
 8. **Send the signal to Enum**
 
-We want our "new" users to be served by the Enum chatbot. To make it happen, we have to send the corresponding signal to the Enum. By default, the Enum chatbot starts working as soon as user sends the first message, and in the next section, we will show you how to change this behavior. Now, let's add the action block, then select the "Update User" type and block "Update Custom Data"
+We want our "new" users to be served by the Enum chatbot. To make it happen, we have to send the corresponding signal to the Enum. By default, the Enum chatbot starts working as soon as user sends the first message, and in the next section, we will show you how to change this behavior. Now, let's add the action block, then select the *Update User* type and block *Update Custom Data*
 
 ![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/8574af27-77eb-4aa8-b4ed-3b4ea758e7d2)
 
@@ -102,7 +102,55 @@ Drag another condition block to the canvas, and select the Conversation segments
 
 ![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/ead2588e-868f-4938-8b55-d6878713a5c3)
 
-11.
+11. **Add the Buttons action**
+
+From the left menu, drag a new Action (*Send Message*, *Add a button picker?*) block and connect it to the previous condition block:
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/ac1fc99a-7ca2-4ad1-ae9e-09fe7028c179)
+
+In the block's properties, enter the accompanying message, then click the *Add a button* and enter the button's text. 
+
+12. **Add the button event block**
+
+Now, we need to know whether the user clicks the chatbot button. Let's add the event (the *Button/Input Action* type) and connect it to the buttons' block:
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/1bf601fb-9f78-43f9-91d5-903b4c1fcbba)
+
+In the block's properties, select the *Button Click* as the message action, and *AI Support Assistant* in the *Match* dropdown. Selecting so, we are saying "We are moving to the next block if user clicked the AI Assistant Button".
+
+13. **Activate the chatbot**
+
+Drag from the left menu an Action block,  add the action block, then select the *Update User* type and block *Update Custom Data* and enter the following data: key "enum" and value "start_chatbot", then press Enter to save changes - exactly the same what we did in step 8:
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/c0ded8e5-ba74-4952-abe9-7cf15a047ccc)
+
+
+14. **Add the information message**
+
+Add the *Action* block, type *Send message* to the end of this fork and type some information message:
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/2fa19d99-dbdd-4de0-9fb1-e35b841c253b)
+
+
+15. **Save and deploy your chatbot**
+
+On the top menu of the chatbot editor, click the *Save* button
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/67ba9ad5-8f82-4e70-a9f2-23dd78dd02ec)
+
+then the *Deploy*:
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/25695327-d40a-42a6-8679-e3c32346a73a)
+
+
+16. **Add the start settings in the Enum**
+In the Enum dashboard, open your chatbot page, move to the *Custom behaviour & Automation* tab, then to the *Integration with Crisp chatbot workflow* section. Select the second option *Wait for signal from Crisp chatbot or the user to start* and click the *Save* button. Doing so, we say the Enum chatbot "Do not start answering questions until you have a signal" and the signal will be updating "user data" which we did in the steps 8 and 
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/9ff76251-3f39-4370-9f34-c231259a41ec)
+
+That's it!
+
+17. **Test the chatbots integration**
 
 ### 
 
