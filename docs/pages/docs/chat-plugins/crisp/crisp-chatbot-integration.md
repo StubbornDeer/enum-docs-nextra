@@ -167,6 +167,49 @@ This condition will work for any user without an assigned segment.
 
 </Callout>
 
+### Using buttons to control the Enum chatbot
+In some cases, you'd like to pause or start the Enum chatbot when a user clicks a specific button. Let's change this scenario a little bit to demonstrate this approach.
+
+1. **Remove the unnecessary blocks**
+First, remove the custom data block following the buttons block:
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/03747817-68ac-4f32-ba3b-c2f04ca72934)
+
+
+To do that, you click on the block, then click the trash button and confirm the deletion:
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/4f366b46-0cf2-4a24-b024-a2c9af0597b5)
+
+
+
+2. **Add the button ID**
+
+Now, click the edit button for the button block, then click the blue gear button for the Chatbot button, and then click the *Show identifier customization*.
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/741e0c3a-839c-4602-89c3-a91a6716f8de)
+
+Enter "enum:start_chatbot" in the field and press the Enter button:
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/ca45a92d-a887-46bf-9036-e4c644e0736d)
+
+
+3. **Repick the button in the next conditional block**
+
+As we changed the button's ID we have to repick the button - just click the block, and in the editor on the left, re-select the button:
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/39d02af8-284f-4304-8f66-f71b1b40b215)
+
+4. **Reconnect all blocks**
+
+Make sure all the blocks in this fork are reconnected properly:
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/919c8a4d-7bf6-43ce-bb5a-eed09256ac8b)
+
+The result is the same as in the previous example.
+
+<Callout>
+  Never mix the setting custom data and button click as these 2 actions will be done simultaneously or just one-by-one.
+</Callout>
 
 ## List of commands that can be sent to Enum chatbot
 
