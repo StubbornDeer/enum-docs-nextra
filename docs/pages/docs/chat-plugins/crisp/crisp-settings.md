@@ -2,9 +2,10 @@ import { Callout, Steps } from 'nextra-theme-docs';
 
 ## Chatbot settings
 
-Here you can change the parameters to customize your chatbot and its behavior.
+Here you can change the parameters to customize your chatbot and its behavior.  
 
-![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/df154410-4b27-4552-9038-3631d2b51ad5)
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/c02ece42-841e-43d0-a9b7-6005a05821a6)
+
 
 
 
@@ -23,6 +24,10 @@ If you want the chatbot to include the most relevant links in its response, chec
 <Callout>
 This checkbox is turned off by default.
 </Callout>
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/59aeb457-fe43-4eb3-a9be-85f402c633db)
+
+
 This is how the response with links looks:
 
 ![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/03342743-2538-42df-890e-7c4e8f291c65)
@@ -30,10 +35,15 @@ This is how the response with links looks:
 
 <Callout>Please note, we provide only the links but Crisp chatbox renders the first one based on the metatags that can be found on the webpage.</Callout>
 
-We include 5 found links, the first one is marked as "Source", and others as "Additional sources". The titles are automatically translated into the user's language:
+We include 5 found links, the first one is marked as "Source", and others as "Additional sources" - by default. The titles are automatically translated into the user's language:
 
 ![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/dfd9aa31-5ade-476f-aef8-5df7bd6291c0)
 
+You can change the number of shown links:
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/0a88c336-9e24-444e-86a0-5483d78563dc)
+
+Both numbers could be zero, and no links will be shown. By default, if you don't change this setting, we show 1 main link and 3 additional links.
 
 ### Widget settings
 Here, you specify how your chatbot and its responses look:
