@@ -89,18 +89,45 @@ This name is shown as grey text beside the chatbot's icon. You may leave it empt
 
 ### Custom behaviour & Automation
 
-Here are 4 sections, all collapsed by default:
+Here are 6 sections, all collapsed by default:
 
-![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/1aa3e301-d21a-4a7c-80d6-2e85f4cd95cc)
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/ca10a61c-6828-4491-bd19-696bbdcac84c)
+
 
 
 #### Chatbot in session
 Here you define your chatbot's automatic behaviour during the sessions:
 
-![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/bd878ab0-4dbc-4a6d-aeb6-70674cf3dbba)
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/c2eed48b-0774-4f78-a518-40f39b0ae151)
+
+1. *Pass the user name to the chatbot, when known*
+If you collect email during the conversation (this setting can be found on your website on Crisp) Crisp will extract the name from email.
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/f340951b-34b7-4c4f-9c8b-57b538c63187)
+
+This name be passed to the chatbot if you set up this setting on.
+
+<Callout>
+  To make the chatbot use the name when known please provide the corresponding instruction like "Always use the user name when you know it."
+</Callout>
+
+Here is how the chatbot is using the name:
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/4aefa83e-bca3-4697-9178-df662d00cf75)
 
 
-1. *Pause the chatbot when agent joins the conversation*
+2. *Send this message when a conversation starts*
+
+When a user starts the conversation and says hi, you may want the chatbot to greet the user back. Enter your message in the field if you want this behavior.
+
+<Callout>
+  Why to use the greeting message? You may want to let your user know that they are talking with AI, not a human (it's not always obvious).
+</Callout>
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/4a158665-cbc1-4cb7-b9f8-bdbe1db40c67)
+
+
+3. *Pause the chatbot when agent joins the conversation*
 
 If this checkbox is checked, then every time when you or your agents join a conversation with the chatbot, the chatbot will be quiet.
 
@@ -108,14 +135,14 @@ If this checkbox is checked, then every time when you or your agents join a conv
 All the paused sessions can be found on the *Paused sessions* tab, more information is below. To re-run the session in semi-automatic mode, use the next option.
 </Callout>
 
-2. *Re-run chatbot when conversation is resolved*
+4. *Re-run chatbot when conversation is resolved*
 
 This indicates to re-run the chatbot when you click the "Mark this conversation as resolved" in the Crisp dashboard:
 
 ![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/12941fcf-34e9-4449-b81b-bc3a03fa1d29)
 
 
-3. *Send this message when re-running chatbot*
+5. *Send this message when re-running chatbot*
 
 It's a good idea to let your user know that the chatbot is running again so they can enjoy your support 24/7.
 
