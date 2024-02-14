@@ -82,12 +82,16 @@ There are several reasons why it may not work (by working we mean the chatbot is
 3) Check if you have more than other projects and accounts with the same chatbots. We do not prohibit creating multiple accounts with us (if it doesn't break our terms) but it happens with some of our users that they forgot about already existing accounts with the same bot. When a new message is coming our inner application looks for any project by the website id and there is no guarantee it will be a "right" project. So, if it's your case, just sign in using another browser, then find the project and remove the chatbot you don't want to be confused with.
 
 4) Check your OpenAI account (for those who are on the "Key" plan). If you are out of your credits, no more calls to ChatGPT can be made until you pay.
+You can look at the project's logs to see if there are error messages like this one:
 
-5) Check if your sessions are in the list of paused sessions (the corresponding tab of your chatbot). The chatbot can be paused if you set up the corresponding flags and they worked, for instance, when an agent joins the conversation, the chatbot can be paused.
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/724180f2-b1c0-4b2c-9de9-c814b566193a)
 
-6) Check the schedule for your chatbot - it may be exact the timeslot when it's paused.
 
-7) Check the *Integration with Crisp chatbot workflow* setting for your chatbot. If you've selected the second option, the chatbot will always wait for a signal from the Crisp chatbot to start, else it won't start. The first option is the default one and doesn't prevent the chatbot from answering.
+6) Check if your sessions are in the list of paused sessions (the corresponding tab of your chatbot). The chatbot can be paused if you set up the corresponding flags and they worked, for instance, when an agent joins the conversation, the chatbot can be paused.
+
+7) Check the schedule for your chatbot - it may be exact the timeslot when it's paused.
+
+8) Check the *Integration with Crisp chatbot workflow* setting for your chatbot. If you've selected the second option, the chatbot will always wait for a signal from the Crisp chatbot to start, else it won't start. The first option is the default one and doesn't prevent the chatbot from answering.
 
 ![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/39b73e84-ea94-404a-80a5-f78eda0bd5cc)
 
