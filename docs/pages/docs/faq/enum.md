@@ -51,56 +51,6 @@ We generate answers via [OpenAI ChatGPT](https://openai.com/chatgpt).
 #### Which models do you use?
 To create embeddings, we use the *text-embedding-ada-002* model. For generating responses, we use the *gpt-3.5-turbo*, *gpt-4*, and *gpt-4-turbo* models. Please note that two latter models are available for users who bought the "Key" plan. Also, lower models like Curie and DaVinci are available.
 
-## Enum plugin for Crisp
-### General questions
-#### How to install the Crisp chatbot on my website?
-Please follow the [Crisp guide](https://help.crisp.chat/en/article/how-to-add-a-live-chat-to-my-website-10wcj3l/).
-
-#### I can't see the Enum plugin on Crisp's marketplace anymore, what does it mean?
-Sometimes (pretty rarely, though) we started working on big changes that can't be deployed immediately. Crisp may require us to hide the plugin from the market if it's not production-ready. If it happens it means we will be there again as soon as we prepare the plugin to be ready for public.
-
-#### Does the chatbot understand other than English, languages?
-Yes, it does. It automatically detects the language and answers in the corresponding language. It also translates the buttons. Currently, we can translate in 107 languages.
-
-#### How do I connect the Crisp chatbot and Enum?
-Please follow [our guide on installing the Crisp plugin](https://www.enumhq.com/docs/chat-plugins/crisp/crisp-installation).
-
-#### My chatbot isn't working!
-There are several reasons why it may not work (by working we mean the chatbot is answering your users' questions).
-
-1) Check if the Enum plugin for Crisp was installed and integrated successfully.
-   If you see this, it means you actually didn't install the plugin:
-
-   ![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/b6d87866-a107-41d3-9c82-0146c3cf6e68)
-
-
-2) Check if your chatbot is enabled.
-
-![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/58d95917-c3a8-4827-85ba-a9b271f85cb4)
-
-
-3) Check if you have more than other projects and accounts with the same chatbots. We do not prohibit creating multiple accounts with us (if it doesn't break our terms) but it happens with some of our users that they forgot about already existing accounts with the same bot. When a new message is coming our inner application looks for any project by the website id and there is no guarantee it will be a "right" project. So, if it's your case, just sign in using another browser, then find the project and remove the chatbot you don't want to be confused with.
-
-4) Check your OpenAI account (for those who are on the "Key" plan). If you are out of your credits, no more calls to ChatGPT can be made until you pay.
-You can look at the project's logs to see if there are error messages like this one:
-
-![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/724180f2-b1c0-4b2c-9de9-c814b566193a)
-
-
-6) Check if your sessions are in the list of paused sessions (the corresponding tab of your chatbot). The chatbot can be paused if you set up the corresponding flags and they worked, for instance, when an agent joins the conversation, the chatbot can be paused.
-
-7) Check the schedule for your chatbot - it may be exact the timeslot when it's paused.
-
-8) Check the *Integration with Crisp chatbot workflow* setting for your chatbot. If you've selected the second option, the chatbot will always wait for a signal from the Crisp chatbot to start, else it won't start. The first option is the default one and doesn't prevent the chatbot from answering.
-
-![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/39b73e84-ea94-404a-80a5-f78eda0bd5cc)
-
-
-#### How to prevent the chatbot from interrupting the conversation with an agent?
-There is a setting you can use to pause the chatbot as soon as an agent joins the conversation. It can be found in the chatbot's settings, on the *Custom Behaviour & Automation* tab, in the *Chatbot in session* tab:
-
-![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/e7a0dfc8-bcaa-4654-8e7b-802f6377a691)
-
 #### The chatbot's responses are too short (or too verbose), how to fix it?
 You may create a custom prompt where you describe the style of responding. For example, if the responses are too short you may write "Respond in a polite, verbose manner explaining every single detail" or something like that. This setting is available on the project's settings page, on the *AI Settings* tab:
 
@@ -160,3 +110,55 @@ The number of chunks to be sent as context can change the results too. Fortunate
 
 #### My chatbot only answers "Let me send your enquiry to our colleague who may know the answer"
 This answer means you reached the limits of usage. Please check your limits on the *Limits/Usage* page (the link to it can be found on the left bottom menu).
+
+
+## Enum plugin for Crisp
+### General questions
+#### How to install the Crisp chatbot on my website?
+Please follow the [Crisp guide](https://help.crisp.chat/en/article/how-to-add-a-live-chat-to-my-website-10wcj3l/).
+
+#### I can't see the Enum plugin on Crisp's marketplace anymore, what does it mean?
+Sometimes (pretty rarely, though) we started working on big changes that can't be deployed immediately. Crisp may require us to hide the plugin from the market if it's not production-ready. If it happens it means we will be there again as soon as we prepare the plugin to be ready for public.
+
+#### Does the chatbot understand other than English, languages?
+Yes, it does. It automatically detects the language and answers in the corresponding language. It also translates the buttons. Currently, we can translate in 107 languages.
+
+#### How do I connect the Crisp chatbot and Enum?
+Please follow [our guide on installing the Crisp plugin](https://www.enumhq.com/docs/chat-plugins/crisp/crisp-installation).
+
+#### My chatbot isn't working!
+There are several reasons why it may not work (by working we mean the chatbot is answering your users' questions).
+
+1) Check if the Enum plugin for Crisp was installed and integrated successfully.
+   If you see this, it means you actually didn't install the plugin:
+
+   ![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/b6d87866-a107-41d3-9c82-0146c3cf6e68)
+
+
+2) Check if your chatbot is enabled.
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/58d95917-c3a8-4827-85ba-a9b271f85cb4)
+
+
+3) Check if you have more than other projects and accounts with the same chatbots. We do not prohibit creating multiple accounts with us (if it doesn't break our terms) but it happens with some of our users that they forgot about already existing accounts with the same bot. When a new message is coming our inner application looks for any project by the website id and there is no guarantee it will be a "right" project. So, if it's your case, just sign in using another browser, then find the project and remove the chatbot you don't want to be confused with.
+
+4) Check your OpenAI account (for those who are on the "Key" plan). If you are out of your credits, no more calls to ChatGPT can be made until you pay.
+You can look at the project's logs to see if there are error messages like this one:
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/724180f2-b1c0-4b2c-9de9-c814b566193a)
+
+
+6) Check if your sessions are in the list of paused sessions (the corresponding tab of your chatbot). The chatbot can be paused if you set up the corresponding flags and they worked, for instance, when an agent joins the conversation, the chatbot can be paused.
+
+7) Check the schedule for your chatbot - it may be exact the timeslot when it's paused.
+
+8) Check the *Integration with Crisp chatbot workflow* setting for your chatbot. If you've selected the second option, the chatbot will always wait for a signal from the Crisp chatbot to start, else it won't start. The first option is the default one and doesn't prevent the chatbot from answering.
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/39b73e84-ea94-404a-80a5-f78eda0bd5cc)
+
+
+#### How to prevent the chatbot from interrupting the conversation with an agent?
+There is a setting you can use to pause the chatbot as soon as an agent joins the conversation. It can be found in the chatbot's settings, on the *Custom Behaviour & Automation* tab, in the *Chatbot in session* tab:
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/e7a0dfc8-bcaa-4654-8e7b-802f6377a691)
+
