@@ -44,6 +44,9 @@ This plugin is available for the "Unlimited" plan, you also can start with a fre
 
 ![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/5e00a4e0-978f-4547-ad37-a73c3007dc60)
 
+<Callout>
+If you don't have access to the Crisp chatbot, it's probably impossible for you to use the whole workflow but you can set up the variables on your website via JavaScript (see the last section) to implement some logic.
+</Callout>
 
    3. **Create the first scenario**
 
@@ -227,3 +230,22 @@ Recognized values:
 
 - key: enum, value: start_chatbot
 - key: enum, value: pause_chatbot
+
+## Sending signals via JavaScript
+If you don't have access to the Crisp chatbot, it's still possible to pause and start your Enum chatbot - it can be done via JavaScript. On your website, you can set up some logic (for example, via clicking the corresponding buttons, or with a pure JavaScript) and signal will be sent to the Enum chatbot exactly in the same way as it's done via the Crisp chatbot. For example, here the code to start/pause the Enum chatbot by clicking the buttons:
+
+```
+    <script type="text/javascript">
+        window.$crisp=[];
+        window.CRISP_WEBSITE_ID="YOUR_WEBSITE_ID";
+        (function(){d=document;s=d.createElement("script");
+        s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();
+    
+        function run_pause_chatbot(value){
+            $crisp.push(["set", "session:data", ["enum", value]]); // Or explicitly $crisp.push(["set", "session:data", ["enum", 'start_chatbot']]); 
+        }
+    </script>
+
+    <button onclick="run_pause_chatbot('start_chatbot')">start</button>
+    <button onclick="run_pause_chatbot('pause_chatbot')">pause</button>
+```
