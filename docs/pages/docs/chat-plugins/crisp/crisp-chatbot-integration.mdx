@@ -250,3 +250,11 @@ If you don't have access to the Crisp chatbot, it's still possible to pause and 
     <button onclick="run_pause_chatbot('pause_chatbot')">pause</button>
 ```
 The documentation on working with the Crisp sessions can be found [here](https://docs.crisp.chat/guides/chatbox-sdks/web-sdk/dollar-crisp/#push-session-data).
+
+*One important note*
+Due to the Crisp API which is it doesn't allow to set up the same values in a row, alway set up first a dummy value separated with a short timeout like this one:
+
+```
+$crisp.push(["set", "session:data", ["enum", Math.random().toString()]]); // Random dummy value
+setTimeout(()=>$crisp.push(["set", "session:data", ["enum", value]]), 1000); // Actualy value sent in one second.
+```
