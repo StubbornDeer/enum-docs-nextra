@@ -142,7 +142,7 @@ There are several reasons why it may not work (by working we mean the chatbot is
 
 3) Check if you have more than other projects and accounts with the same chatbots. We do not prohibit creating multiple accounts with us (if it doesn't break our terms) but it happens with some of our users that they forgot about already existing accounts with the same bot. When a new message is coming our inner application looks for any project by the website id and there is no guarantee it will be a "right" project. So, if it's your case, just sign in using another browser, then find the project and remove the chatbot you don't want to be confused with.
 
-4) Check your OpenAI account (for those who are on the "Key" plan). If you are out of your credits, no more calls to ChatGPT can be made until you pay.
+4) Check your OpenAI account (for those who are on the "Key" plan). If you are out of your credits, no more calls to ChatGPT can be made until you pay (and you should pay in advance, they don't have "pay-as-you-go" option).
 You can look at the project's logs to see if there are error messages like this one:
 
 ![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/724180f2-b1c0-4b2c-9de9-c814b566193a)
@@ -155,6 +155,16 @@ You can look at the project's logs to see if there are error messages like this 
 8) Check the *Integration with Crisp chatbot workflow* setting for your chatbot. If you've selected the second option, the chatbot will always wait for a signal from the Crisp chatbot to start, else it won't start. The first option is the default one and doesn't prevent the chatbot from answering.
 
 ![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/39b73e84-ea94-404a-80a5-f78eda0bd5cc)
+
+9) Check if you exceeded your Enum limits, you can find it on the *Limits/Usage* page accessing from the left menu:
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/7de38b81-f237-4a5c-b822-b2ffd565493e)
+
+10) There could be outages of OpenAI. Check this page https://status.openai.com/history to see if it's the case.
+
+11) Check if you set the chatbot to run only in the test environment. This setting can be found on the *Live test* tab of your chatbot:
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/59d66ec6-cfb3-4525-a949-8b41e369e0f4)
 
 
 #### How to prevent the chatbot from interrupting the conversation with an agent?
