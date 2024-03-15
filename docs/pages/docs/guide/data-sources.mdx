@@ -129,15 +129,23 @@ After the indexing is done you will see the updated numbers and icons:
 ![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/9f98ac1c-603c-478f-8716-96c61d096555)
 
 #### Indexing parameters
-You can specify if you want data to be stored densely, or sparced. Sometimes, when parsing a website, our system leaves a lot of empty space between text data (that looks like empty lines). Usually, it doesn't affect to the chatbot's quality but sometimes, removing these gaps could improve it significantly. 
 
 ![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/7cbb65fc-0489-441b-990e-364f2eddf4f8)
 
-![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/32539841-ed6f-4bba-8443-2b6bf3a575d0)
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/47ead58e-54dd-4c7e-8a9b-3b0e72fb9b8f)
+
+<Callout>
+Change the settings before indexing. If you already index your data, please re-index to see if this parameter affects the chatbot's quality.
+</Callout>
+
+**Density of data**
+
+You can specify if you want data to be stored densely, or sparced. Sometimes, when parsing a website, our system leaves a lot of empty space between text data (that looks like empty lines). Usually, it doesn't affect to the chatbot's quality but sometimes, removing these gaps could improve it significantly. 
 
 
-Change it before indexing. If you already index your data, please re-index to see if this parameter affects the chatbot's quality.
+**Include links**
 
+This option allows you to include links in your extracted text alongside the other text. For example, if your data source has the following HTML code ```...in our <a href="https://mywebsite.com/documentation.html">documentation</a>``` the full link will be included as "...in our https://mywebsite.com/documentation.html documentation" if the option is selected. Even though it may provide more valuable information, in some cases it may worsen the results, so always test this option with indexing just a couple of pages with the following testing the chatbot on the Interaction page to make sure the chatbot quality is appropriate.
 
 ### Re-indexing website
 
