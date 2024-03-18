@@ -172,3 +172,8 @@ There is a setting you can use to pause the chatbot as soon as an agent joins th
 
 ![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/e7a0dfc8-bcaa-4654-8e7b-802f6377a691)
 
+#### The icon (avatar) is not showing for my chatbot after I changed it
+There could be a couple of problems with your new icon (avatar):
+
+1. First of all, currently Crisp supports only image values. So, .PNG, .JPG (or .JPEG), .BMP are valid extensions for your images. But embedded images are not working. Also, we currently take only URLs which means the images should be uploaded to some server.
+2. Crisp has a pretty load timeout time (the waiting time) to render the icon, so the image should be pretty small for fast load. Also, your server should be fast enough. So, if you don't know how to resize the image or have doubts about your server's speed, please send us your picture at info@enumhq.com and we upload it to our server (the GitHub) which is proven to be fast.
