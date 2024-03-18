@@ -147,9 +147,10 @@ then the *Deploy*:
 
 
 16. **Add the start settings in the Enum**
-In the Enum dashboard, open your chatbot page, move to the *Custom behaviour & Automation* tab, then to the *Integration with Crisp chatbot workflow* section. Select the second option *Wait for signal from Crisp chatbot or the user to start* and click the *Save* button. Doing so, we say to the Enum chatbot "Do not start answering questions until you have a signal" and the signal will be updating "user data" which we did in the steps 8 and 
+In the Enum dashboard, open your chatbot page, move to the *Custom behaviour & Automation* tab, then to the *Control the chatbot via Crisp bot, or from JavaScript* section. Select the second option *Wait for signal from Crisp chatbot or the user to start* and click the *Save* button. Doing so, we say to the Enum chatbot "Do not start answering questions until you have a signal" and the signal will be updating "user data" which we did in the steps 8 and 
 
-![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/9ff76251-3f39-4370-9f34-c231259a41ec)
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/a58e0a29-09ac-41cb-af02-25e691aadb5d)
+
 
 That's it!
 
