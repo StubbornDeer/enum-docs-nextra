@@ -232,8 +232,16 @@ Recognized values:
 - key: enum, value: start_chatbot
 - key: enum, value: pause_chatbot
 
+## List of commands that the Enum chatbot can send to the Crisp
+
+In some cases, we want to notify the Crisp chatbot about changes done on our side. At the moment, we send one signal when our chatbot is paused due the user's request for human assistance:
+
+- key: enum, value: chatbot_paused:human
+
+In the future, if we send a signal when the chatbot is paused due to another reason, your workflow can be recognized easily the reason as it's provided in the value, after the semicolon.
+
 ## Sending signals via JavaScript
-If you don't have access to the Crisp chatbot, it's still possible to pause and start your Enum chatbot - it can be done via JavaScript. On your website, you can set up some logic (for example, via clicking the corresponding buttons, or with a pure JavaScript) and signal will be sent to the Enum chatbot exactly in the same way as it's done via the Crisp chatbot. For example, here the code to start/pause the Enum chatbot by clicking the buttons:
+If you don't have access to the Crisp chatbot, it's still possible to pause and start your Enum chatbot - it can be done via JavaScript. On your website, you can set up some logic (for example, via clicking the corresponding buttons, or with pure JavaScript) and the signal will be sent to the Enum chatbot exactly in the same way as it's done via the Crisp chatbot. For example, here the code to start/pause the Enum chatbot by clicking the buttons:
 
 ```
     <script type="text/javascript">
