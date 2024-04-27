@@ -177,3 +177,10 @@ There could be a couple of problems with your new icon (avatar):
 
 1. First of all, currently Crisp supports only image values. So, .PNG, .JPG (or .JPEG), .BMP are valid extensions for your images. But embedded images are not working. Also, we currently take only URLs which means the images should be uploaded to some server.
 2. Crisp has a pretty load timeout time (the waiting time) to render the icon, so the image should be pretty small for fast load. Also, your server should be fast enough. So, if you don't know how to resize the image or have doubts about your server's speed, please send us your picture at info@enumhq.com and we upload it to our server (the GitHub) which is proven to be fast.
+
+
+#### How do I change the website Id for my chatbot?
+If you have several websites and decided to change the website id your chatbot is connected to you first, have to install Enum plugin from *that* website in the Crisp dashboard. It will initiate the same data update as you did it the first time, and a new website id will be added to your data in Enum. After that, you can select another website Id from the dropdown in the chatbot properties pane:
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/2b29cfa1-6b6b-4cbb-a328-8933e310becc)
+
