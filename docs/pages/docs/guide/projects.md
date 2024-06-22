@@ -86,18 +86,18 @@ Here you can enter messages as a guide for the chatbot on what to say when it do
   You can set up these messages that will be used in all your chatbots for the current project unless you provide the same messages for a separate chatbot which has a higher priority.
 </Callout>
 
-#### Fine tuning
+#### Fine-tuning
 
 These settings are used for the fine-tuning data to be passed to ChatGPT as context.
 
-![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/f8b996d8-e683-41eb-9a51-2f5b4c1701ca)
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/9a55bc9b-a316-4040-afe5-a0740d8605ba)
 
 
-- chunk size is the amount of bytes to be stored and to be obtained from the index database to form context data (the default number is 256 bytes which usually works great but in some cases, other amount, say, 1024 bytes works better)
-- amount of chunks to send as context - the number of pieces that will be sent as context. The more the number the better but sometimes it can be more that the OpenAI threshold what can cause an error.
+- chunk size is the amount of text in of [tokens](https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them) to be stored and to be obtained from the index database to form context data (the default number is 300 tokens which usually works great but in some cases, another amount, say, 1024 tokens works better)
+- the amount of chunks to send as context - the number of pieces that will be sent as context. The more the number the better but sometimes it can be more than the OpenAI threshold which can cause an error.
 
 #### Stick to context
-If you want the chatbot to be stick to your context and ignore questions that may be outside of it, use this parameter:
+If you want the chatbot to stick to your context and ignore questions that may be outside of it, use this parameter:
 
 ![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/d4e650b7-d604-41cc-9bd6-ef7372ad20af)
 
