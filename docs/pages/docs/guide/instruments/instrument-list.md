@@ -218,4 +218,32 @@ Have you noted the "Data" part on the screenshot above? We can just add it to th
 ![image](https://github.com/user-attachments/assets/342b4d79-6fcf-4d5e-8a0f-6dc61542172d)
 
 Providing this data, we tell the chatbot to extract the flight number and pass it as "flnr" variable with the corresponding value to the endpoint.
-Now, save the data, and let's test our chatbot!
+Now, save the data, and let's test our instrument!
+
+#### Step 3. Testing and tuning our instrument
+For testing purposes, let's move to the *Interaction* page where we can test without using any Crisp chatbot and ask the chatbot about our flight:
+
+![image](https://github.com/user-attachments/assets/dc16c155-e6d5-4aff-b393-3152c5adea94)
+
+So far so good but not very specific... let's try again:
+
+![image](https://github.com/user-attachments/assets/ddb88bc4-4272-48d4-81f7-7de35e7fef9a)
+
+But... it's slightly wrong, let's go back to the API test response:
+
+![image](https://github.com/user-attachments/assets/f1c36c9a-a3ee-4c0b-9db1-eb08f9785ea5)
+
+It looks like the chatbot takes the delay information from a wrong field. Let's improve the instrument's settings. Open its configuration and change the return value to *"Read the returning JSON data. The field "avg_delay" gives the average delay in minutes so if the question is about delay, read from this field, and ignore "delay_30d" field. the fields "from" and "to" mean the airport abbreviation. You should know what they mean, so give the full qualified name of airport."*
+
+![image](https://github.com/user-attachments/assets/ca22f97d-911e-4b68-80a6-e824664562b5)
+
+Save the instrument and then, let's try again:
+
+![image](https://github.com/user-attachments/assets/535d518e-ace8-46b0-b4f8-b95f1f079544)
+
+This is exactly what we need! Let's also test the departure and destination:
+
+![image](https://github.com/user-attachments/assets/ead55436-60b3-4854-95d7-2afbd5f59f70)
+
+Now, it works as expected! 
+If you like the article and this use case, let us know by sharing it on social networks. You also can send us your opinion at info@enumhq.com!
