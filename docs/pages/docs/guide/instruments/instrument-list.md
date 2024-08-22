@@ -181,6 +181,41 @@ Click the *Test endpoint* button and then move to the *Results* tab (select the 
 We highlighted the data we are interested. It's the departure and destination airports, and the delay. If we check the flight stats (from the FlightRadar screenshot) we see that this value **avg_delay** is exactly delay we would like to know, and the value in minutes. Remember this fact. 
 
 #### Step 2. Install and configure the API endpoint instrument in the Enum dashboard
+Now, come back to the Enum dashboard. Open the *Instrument market* page in your project and click the *Install* button for the *Custom API endpoint* instrument.
+
+![image](https://github.com/user-attachments/assets/b354695b-617a-4797-b97f-79362ea20221)
+
+Move to the *My instruments* menu and see our instrument is installed. Click the *Details* button to configure the instrument:
+
+![image](https://github.com/user-attachments/assets/2880261f-9901-4fea-8feb-c915c8257917)
+
+Provide the following data for the corresponding fields:
+
+- **Full description**: "Answers questions on flight status, delay, and other information."
+- **Prompt**: "If user wants to check the flight status or obtain any other information about it, collect the flight number."
+- **Return value**: "Read the returning JSON data. The field "avg_delay" gives the average delay in minutes so if the question is about delay, read from this field. The fields "from" and "to" mean the airport abbreviation. You should know what they mean, so give the full qualified name of airport."
+
+Copy values for the next fields from the code snippet:
+
+![image](https://github.com/user-attachments/assets/4449ee42-7111-4b4a-97ec-b8aef6e9e7ea)
+
+
+- **API endpoint**: "https://flightera-flight-data.p.rapidapi.com/flight/statistics"
+- **Method**: select *GET*
+- **Headers**: copy two your values
+
+So, your data so far should like like that:
+
+![image](https://github.com/user-attachments/assets/b322a9db-5781-45a4-b083-00b36d58e4d7)
+
+![image](https://github.com/user-attachments/assets/90de720e-f277-4b61-993f-392865acc8d0)
 
 
 
+Now, the most interesting part which makes the magic true!
+Have you noted the "Data" part on the screenshot above? We can just add it to the parameters value but we don't want it to "hardcode" - as our goal is to allow the users to enter the flight number on their own. So, instead of parameters, we provide this part in the *Data* section. Add one variable, copy the "flnr" to the *Name* field, then select *string* type and add the description, for example, "flight number".
+
+![image](https://github.com/user-attachments/assets/342b4d79-6fcf-4d5e-8a0f-6dc61542172d)
+
+Providing this data, we tell the chatbot to extract the flight number and pass it as "flnr" variable with the corresponding value to the endpoint.
+Now, save the data, and let's test our chatbot!
