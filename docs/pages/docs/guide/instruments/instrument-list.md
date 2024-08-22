@@ -66,25 +66,25 @@ You need to configure the settings of your API endpoint to be able to pass the d
 ### Full description
 Provide the full description of what exactly this instrument does. It's necessary for proper choosing and running it. For example, you can write something like "Checks the flight status by the provided flight number."
 
-![image](https://github.com/user-attachments/assets/1bd0b55a-1a1b-47ca-9e3b-c45570773bd8)
+![image](https://github.com/user-attachments/assets/7badbc48-c394-4835-bd7c-c299dc36a709)
 
 
 ### Prompt
 This part helps to collect the proper information to run the instrument. For example, if a user wants to know the flight status but forgot to provide the flight number, the chatbot should ask them. For it, you can write something like "If user wants to check the flight status, collect the flight number."
 
-![image](https://github.com/user-attachments/assets/54872a99-2832-4e0c-8163-1bc370c3a203)
+![image](https://github.com/user-attachments/assets/2843cfeb-f797-4696-bb7c-89e5330556b2)
 
 
 ### Return value
 The API call may return complex data in any format. You need to provide clear instructions on which data to extract. For example, you can write "From JSON, extract the value from field X."
 
-![image](https://github.com/user-attachments/assets/6c37c464-c187-4c9d-9278-d6f4757baee9)
+![image](https://github.com/user-attachments/assets/7eff5cd1-e560-42be-bdfa-4c233dbc32c6)
 
 
 ### API endpoint
 Provide a fully qualified URL to the API endpoint, for example, "https://app.myservice.com/api/customer".
 
-![image](https://github.com/user-attachments/assets/c73d0abf-d0f2-4fb3-90a2-e8a5d01e39c4)
+![image](https://github.com/user-attachments/assets/193e9f6e-8c5b-4069-a911-57c9e3b734b2)
 
 
 ### API method
@@ -132,8 +132,55 @@ Here, you provide data that should be passed to the endpoint. This data is passe
 ![image](https://github.com/user-attachments/assets/043e96d9-3efb-43cf-a0cb-8ea8e2942a92)
 
 ### Full example
-Let's review a full example of working with such a great instrument as "API endpoint". We will create a chatbot that
+Let's review a full example of working with such a great instrument as "API endpoint". We will create a chatbot that will give us the information on a custom flight.
+First of all, let's choose the flight we would like to know about (to test the results and verify their quality). Open the [Flight Radar website](https://www.flightradar24.com/) and select some flight. We liked this one:
 
+![image](https://github.com/user-attachments/assets/648b04cc-cce1-4dfb-b5ca-45afa66c17db)
+
+# Let's fun begin!
+
+#### Step 1. Find and install the API endpoint
+You can find a good API on the [Rapid API service](https://rapidapi.com/) - it doesn't only have tons of great APIs, but many of them are free or super-cheap! So, after you signing up, you will be navigated to https://rapidapi.com/hub where you "flight status" in the search field:
+
+![image](https://github.com/user-attachments/assets/430efc58-010a-47a2-a037-52aa300cb578)
+
+
+Click the "Flighter Flight Data" and you will be redirected to their RapidAPI page:
+
+![image](https://github.com/user-attachments/assets/937a3b12-b516-4fe7-9003-890c85bae405)
+
+
+Now, to test the endpoint, you need to subscribe to their API. They have a free plan so click the *Subscribe to Test* button (it doesn't require you to provide your CC information):
+
+![image](https://github.com/user-attachments/assets/0176ea18-f1a3-4238-93ab-49b9f23b224f)
+
+Click the *Start free plan* button, then click the *Subscribe* button:
+
+![image](https://github.com/user-attachments/assets/7adf4b13-3b57-41d6-8cee-91bf3aeebb6d)
+
+Then, click the *Skip, get started* button and you are good to go!
+
+![image](https://github.com/user-attachments/assets/99ccbd59-b104-4fb2-9146-4a438d30889b)
+
+You will be redirected to the *App* tab of the page, so click the *flightStatistics* item on the left menu:
+
+![image](https://github.com/user-attachments/assets/08211b07-b731-4a95-9af7-6b9f58212433)
+
+Click the *Params* tab and enter the flight number (see the screenshot of the FlightRadar website above, to find the flight number):
+
+![image](https://github.com/user-attachments/assets/376d71d1-cd00-4a51-baec-a4ecf14b1faf)
+
+While you enter your data, the service will automatically generate the code snippet that you can use, it's very convenient to figure out which data we should use, and how (we selected *Python* but you can select any other available programming language):
+
+![image](https://github.com/user-attachments/assets/dd9f9817-5b1f-4c03-bb64-a6b3fe938360)
+
+Click the *Test endpoint* button and then move to the *Results* tab (select the *JSON* format of data):
+
+![image](https://github.com/user-attachments/assets/2abe6692-78ac-471e-91d5-f9949d5040d3)
+
+We highlighted the data we are interested. It's the departure and destination airports, and the delay. If we check the flight stats (from the FlightRadar screenshot) we see that this value **avg_delay** is exactly delay we would like to know, and the value in minutes. Remember this fact. 
+
+#### Step 2. Install and configure the API endpoint instrument in the Enum dashboard
 
 
 
