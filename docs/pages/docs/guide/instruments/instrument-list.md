@@ -262,9 +262,13 @@ Let's test our real chatbot:
 
 ![image](https://github.com/user-attachments/assets/c3c14f62-57cf-4483-8244-f0c87322d7ba)
 
-What if we change the model to a Claude 3 Haiku by Anthropic? It actually works great:
+What if we change the model to a Claude 3 Haiku by Anthropic? It works really great:
 
 ![image](https://github.com/user-attachments/assets/924d09ab-78aa-4b11-8752-c7b3ef75e604)
+
+If you wonder what was the raw data, here you are:
+
+![image](https://github.com/user-attachments/assets/031368d8-27ee-487b-ae05-88b488867f0f)
 
 
 If you like the article and this use case, let us know by sharing it on social networks. You also can send us your opinion at info@enumhq.com!
