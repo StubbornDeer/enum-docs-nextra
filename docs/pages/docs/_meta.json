@@ -1,8 +1,9 @@
 {
-    "index": "Introduction",
-  "how-it-works": "How it works",
-  "why-enum": "Why Enum",
-    "guide": "Guide",
-    "chat-plugins": "Chat plugins",
-  "faq": "FAQ"
+"index": "Introduction",
+"how-it-works": "How it works",
+"why-enum": "Why Enum",
+"guide": "Guide",
+"chat-plugins": "Chat plugins",
+"faq": "FAQ",
+  "partnership", "Partnership"
 }
