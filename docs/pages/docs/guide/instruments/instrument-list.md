@@ -160,6 +160,10 @@ Click the "Flighter Flight Data" and you will be redirected to their RapidAPI pa
 
 ![image](https://github.com/user-attachments/assets/937a3b12-b516-4fe7-9003-890c85bae405)
 
+<Callout>
+  **Warning!** This endpoint doesn't have the actual information about the current flight but rather the calculated statistics about this flight. For the real-time information, use other endpoints.
+</Callout>
+
 
 Now, to test the endpoint, you need to subscribe to their API. They have a free plan so click the *Subscribe to Test* button (it doesn't require you to provide your CC information):
 
