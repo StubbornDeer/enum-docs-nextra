@@ -229,12 +229,87 @@ When a user clicks this button, the corresponding response and notification will
 
 </Callout>
 
+#### Custom buttons
+You can define to show the custom buttons depending on the class of user request. By "class", we mean some "mood of the query". For example, the "How are you?" query can be classified as just a "query" and the "Why is that? I don't like it!" can be classified as "frustration". We have bunch of predefined classes:
+
+- Human assistance request
+- greeting
+- thanking
+- apologizing
+- question
+- welcoming
+- opinion
+- query
+- user wants help.
+
+Now, you can use one of our predefined classes or add your own class and assign the corresponding button to it. The button could have the following properties:
+
+- label
+- icon (emoji)
+- value (for inner using)
+- URL of a page to show on click (that can be shown right in the Crisp chat, or opened in a separate browser tab).
+
+Let's see how it works.
+
+1. Click the *Add a rule* button:
+
+![image](https://github.com/user-attachments/assets/65fe47e3-a134-42bf-ad5a-2b45b7d4755e)
+
+
+2. A new rule is added to the **end** of the rules:
+
+![image](https://github.com/user-attachments/assets/1dea0ac3-78e3-4acf-917c-0b7303d39b61)
+
+3. Select from the class of query "thanking" and then add two standard buttons:
+
+![image](https://github.com/user-attachments/assets/a0102371-6e24-4868-8d5a-99d231a076d4)
+
+Save the settings and let's test it in our chatbot:
+
+![image](https://github.com/user-attachments/assets/5facf733-451b-4207-aadd-31a8bac9edb7)
+
+<Callout>
+  You can add multiple classes to one rule.
+</Callout>
+
+4. Now, let's create our own class and add a custom button on it. Say, our website is about technical stuff and we want a button to be shown as soon as a question is about drones. This time, add a custom button instead of a standard one:
+
+![image](https://github.com/user-attachments/assets/de1c214b-370b-40f8-8501-ea54c10b4ea0)
+
+Let's test it in the chatbot:
+
+![image](https://github.com/user-attachments/assets/2071cb68-93c1-420d-bd61-a5f3d6f89ca2)
+
+After scrolling to the end of the response, we see our button:
+
+![image](https://github.com/user-attachments/assets/dfff9231-b51d-47f9-b962-5f2aacc8ba8f)
+
+5. Let's make the button to redirect to the website about drones, for example to this website: https://dronelaunchacademy.com/resources/how-do-drones-work/
+
+
+Just add this URL and make sure that the *Where to show* parameter is "in the chatbox":
+
+![image](https://github.com/user-attachments/assets/ed1e6cd5-249b-4abd-867b-e34b5d9ccec9)
+
+So, now, when you click the button, this page will be shown right in the chat (to return back, click the button with arrow in the top left corner):
+
+![image](https://github.com/user-attachments/assets/b1a08ce8-0431-4099-bfd2-1723cbad10a6)
+
+##### Some ideas on using this redirection feature
+Why would you use this feature? It's actually can enrich your users' experience and collect more valuable information for you and your users. For example, you can :
+
+- redirect to the feedback website with the form to collect some data
+- show users some information from other pages (like weather report, flight's stats, or anything else)
+- create a ticket
+- participate in a poll
+- even sell goods.
+
 #### Automation based on a schedule
 You can specify the time slots where you want the chatbot to be quiet or active. Click the *Open schedule calendar* to create a schedule:
 
 ![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/aa2ab4d5-9a4b-4653-9eee-5527bb4d6063)
 
-You will the calendar:
+Open the calendar:
 
 ![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/e4c95d42-19eb-4bcb-a7a3-0ea4333db1ea)
 
