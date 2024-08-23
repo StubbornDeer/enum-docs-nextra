@@ -2,8 +2,8 @@
   "index": "Introduction",
   "how-it-works": "How it works",
   "why-enum": "Why Enum",
-  "Guide": "Guide",
-  "Chat plugins": "Chat plugins",
-  "FAQ": "FAQ",
-  "Partnership", "Partnership"
+  "guide": {"title": "Guide"},
+  "chat-plugins": {"title": "Chat plugins"},
+  "faq": {"title": "FAQ"},
+  "partnership", {"title": "Partnership"}
 }
