@@ -45,7 +45,10 @@ If the code doesn't exist, they will see the corresponding message...
 
 ... and double-check for it.
 
-### You will get the email about increasing your limits
+### You will get an email about increasing your limits
+
+![image](https://github.com/user-attachments/assets/5a78fb9e-294b-4ec4-8da3-7921c80ef20a)
+
 
 ### Both of you, check your limits!
 
