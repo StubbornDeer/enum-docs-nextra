@@ -140,7 +140,18 @@ First of all, let's choose the flight we would like to know about (to test the r
 # Let's fun begin!
 
 #### Step 1. Find and install the API endpoint
-You can find a good API on the [Rapid API service](https://rapidapi.com/) - it doesn't only have tons of great APIs, but many of them are free or super-cheap! So, after you signing up, you will be navigated to https://rapidapi.com/hub where you "flight status" in the search field:
+You can find a good API on the [Rapid API service](https://rapidapi.com/) - it doesn't only have tons of great APIs, but many of them are free or super-cheap! 
+
+The first step is to sign up and confirm your email.
+Before we proceed with this API, we need to create an app. Please, navigate to the *App* page and click the *Add New App* on the left menu:
+
+![image](https://github.com/user-attachments/assets/46e1432e-06ad-4063-8bb8-4eb96bee3bca)
+
+Give it any name and then click the *Add app* button:
+
+![image](https://github.com/user-attachments/assets/c1f63948-f8c8-438b-ab70-e561ed04784c)
+
+So, after you creating an app, you will be navigated to https://rapidapi.com/hub where you "flight status" in the search field:
 
 ![image](https://github.com/user-attachments/assets/430efc58-010a-47a2-a037-52aa300cb578)
 
@@ -246,4 +257,11 @@ This is exactly what we need! Let's also test the departure and destination:
 ![image](https://github.com/user-attachments/assets/ead55436-60b3-4854-95d7-2afbd5f59f70)
 
 Now, it works as expected! 
+
+Let's test our real chatbot:
+
+![image](https://github.com/user-attachments/assets/c3c14f62-57cf-4483-8244-f0c87322d7ba)
+
+
+
 If you like the article and this use case, let us know by sharing it on social networks. You also can send us your opinion at info@enumhq.com!
