@@ -171,9 +171,28 @@ You can completely delete the data obtained from some pages, from the index data
 If you accidentally deleted page data or changed your mind, you always can re-index them again. To avoid indexing these pages in the future, mark them as ingored.
 </Callout>
 
-
 To remove this flag, click on the same button again.
 
 <Callout>
 After you mark or unmark a page, start crawling or indexing to save the changes.
 </Callout>
+
+### Filtering, searching, and manipulation with pages
+#### Filter page by any part of the URL
+
+Just start printing in the *Filter* field and you will see how the list changes:
+
+https://github.com/user-attachments/assets/d986ec7e-954b-46b0-931d-7b37c5bfe29a
+
+Then, you can apply an action to the selected pages:
+
+![image](https://github.com/user-attachments/assets/fcb3c589-cf64-4063-a7ec-b27e38040b0b)
+
+Here is the list of available actions:
+
+- Ignore (mark pages to be ignored during indexing)
+- Unignore (unmark pages to be ignored)
+- Remove (remove from the list *and* the corresponding data from the indexing database, so the content will not be available for your chatbot anymore)
+- Remove indexed content (remove the content only, but leave the page in the list)
+- Sync index status (syncing the index status of content with the status in the list - you only need this option if something went wrong and your list is not updated properly)
+- Unselect (remove selection).
