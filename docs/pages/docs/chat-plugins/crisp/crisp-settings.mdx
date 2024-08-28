@@ -98,9 +98,18 @@ Here are 6 sections, all collapsed by default:
 #### Chatbot in session
 Here you define your chatbot's automatic behaviour during the sessions:
 
-![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/c2eed48b-0774-4f78-a518-40f39b0ae151)
+![image](https://github.com/user-attachments/assets/855eddd0-8cbe-4a8a-88d5-c5eab18d5dbb)
 
-1. *Pass the user name to the chatbot, when known*
+**Wait to reply**
+
+Check this flag if you want the chatbot to reply *only* after the user gives their phone number or email. Use this option **only** if you ask for contact data in Crisp. The example of the Crisp settings:
+
+![image](https://github.com/user-attachments/assets/35a8eb9e-393f-4e80-a8ef-2f728403c60a)
+
+These settings can be found in the Settings --> Website settings --> Chatbot & Email Settings --> Chatbox behavior (in the Crisp dashboard).
+
+**Pass the user name to the chatbot, when known**
+
 If you collect email during the conversation (this setting can be found on your website on Crisp) Crisp will extract the name from email.
 
 ![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/f340951b-34b7-4c4f-9c8b-57b538c63187)
@@ -116,7 +125,7 @@ Here is how the chatbot is using the name:
 ![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/4aefa83e-bca3-4697-9178-df662d00cf75)
 
 
-2. *Send this message when a conversation starts*
+**Send this message when a conversation starts**
 
 When a user starts the conversation and says hi, you may want the chatbot to greet the user back. Enter your message in the field if you want this behavior.
 
@@ -127,7 +136,7 @@ When a user starts the conversation and says hi, you may want the chatbot to gre
 ![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/4a158665-cbc1-4cb7-b9f8-bdbe1db40c67)
 
 
-3. *Pause the chatbot when agent joins the conversation*
+**Pause the chatbot when agent joins the conversation**
 
 If this checkbox is checked, then every time when you or your agents join a conversation with the chatbot, the chatbot will be quiet.
 
@@ -135,19 +144,19 @@ If this checkbox is checked, then every time when you or your agents join a conv
 All the paused sessions can be found on the *Paused sessions* tab, more information is below. To re-run the session in semi-automatic mode, use the next option.
 </Callout>
 
-4. *Re-run chatbot when conversation is resolved*
+**Re-run chatbot when conversation is resolved**
 
 This indicates to re-run the chatbot when you click the "Mark this conversation as resolved" in the Crisp dashboard:
 
 ![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/12941fcf-34e9-4449-b81b-bc3a03fa1d29)
 
 
-5. *Send this message when re-running chatbot*
+**Send this message when re-running chatbot**
 
 It's a good idea to let your user know that the chatbot is running again so they can enjoy your support 24/7.
 
 
-6. *Set Crisp conversation segment when a session starts*
+**Set Crisp conversation segment when a session starts**
 
 You can assing one or more Crisp segments when the conversation starts. It may be very useful for a statistical analysis later, for instance, to distinguish conversations with chatbot from others. You add one or more segments separated by commas:
 
