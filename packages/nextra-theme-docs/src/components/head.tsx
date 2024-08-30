@@ -58,6 +58,7 @@ export function Head(): ReactElement {
           name="viewport"
           content="width=device-width, initial-scale=1.0, viewport-fit=cover"
         />
+        <script defer data-domain="enumhq.com" src="https://plausible.io/js/script.js"></script>
         <style>{`
         :root {
           --nextra-primary-hue: ${lightHue}deg;
