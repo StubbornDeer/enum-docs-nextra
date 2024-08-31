@@ -108,7 +108,6 @@ Check this flag if you want the chatbot to reply *only* after the user gives the
 
 These settings can be found in the Settings --> Website settings --> Chatbot & Email Settings --> Chatbox behavior (in the Crisp dashboard).
 
-
 **Pass the user name to the chatbot, when known**
 
 If you collect email during the conversation (this setting can be found on your website on Crisp) Crisp will extract the name from email.
@@ -135,7 +134,6 @@ When a user starts the conversation and says hi, you may want the chatbot to gre
 </Callout>
 
 ![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/4a158665-cbc1-4cb7-b9f8-bdbe1db40c67)
-
 
 **Do not show buttons on the greeting message**
 
@@ -193,21 +191,11 @@ Here is the example notification sent by email:
 
 ![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/5cfe7f85-59ad-432d-9c21-8f597e06f353)
 
+#### Standard Buttons
 
-#### Coordinate the chatbot with Crisp Triggers
-If you use Crisp triggers, you may consider using these options to avoid duplicating answers (from triggers and the chatbot).
+Here, you can specify some standard buttons that are attached to every message.
 
-![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/4057fe35-3a67-47da-88f2-123dc0ac879c)
-
-1. *Wait for Crisp Trigger response*
-Check this option to make the chatbot wait for the trigger's response. If not checked, the chatbot will answer without waiting.
-
-2. *Wait time (in seconds) for Crisp Trigger response*
-Specify how many seconds to wait. From our experience, 4 seconds is good but you may find it too fast or too slow, depending on your trigger's parameters.
-
-#### Add standard action buttons to the messages
-
-You can add several buttons to your messages. Below each option, there are preview buttons where you can see how they would look in your chatbox.
+Below each option, there are preview buttons where you can see how they would look in your chatbox.
 
 <Callout>
   Please note, that if you show a button, it **must** have a text label (Crisp doesn't allow buttons without text). So, if you remove the text from a field, the default label will be used instead.
@@ -349,6 +337,17 @@ Here, an example of the schedule:
 ![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/aa5287df-1d0c-45b9-af04-f05650de7733)
 
 Click the *Ok* to close the schedule window, then the *Save changes* button.
+
+#### Coordinate the chatbot with Crisp Triggers
+If you use Crisp triggers, you may consider using these options to avoid duplicating answers (from triggers and the chatbot).
+
+![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/4057fe35-3a67-47da-88f2-123dc0ac879c)
+
+1. *Wait for Crisp Trigger response*
+Check this option to make the chatbot wait for the trigger's response. If not checked, the chatbot will answer without waiting.
+
+2. *Wait time (in seconds) for Crisp Trigger response*
+Specify how many seconds to wait. From our experience, 4 seconds is good but you may find it too fast or too slow, depending on your trigger's parameters.
 
 #### Control the chatbot via Crisp bot, or from JavaScript
 
