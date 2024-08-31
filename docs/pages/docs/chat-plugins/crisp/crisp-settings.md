@@ -89,9 +89,9 @@ This name is shown as grey text beside the chatbot's icon. You may leave it empt
 
 ### Custom behaviour & Automation
 
-Here are 6 sections, all collapsed by default:
+Here are 7 sections, all collapsed by default:
 
-![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/ca10a61c-6828-4491-bd19-696bbdcac84c)
+![image](https://github.com/user-attachments/assets/5835e460-ebab-4b96-b14d-a01218b17e72)
 
 
 
