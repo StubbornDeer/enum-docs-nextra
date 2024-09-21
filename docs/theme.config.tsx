@@ -4,7 +4,7 @@ import { useRouter } from 'next/router'
 
 const logo = (
     <div className="nx-flex nx-items-center">
-        <img style={{height:'16px', width: '16px'}} src="https://www.enumhq.com/images/logo.png"/>
+        <img style={{height:'16px', width: '16px'}} src="https://www.enumhq.com/static/images/logo.png"/>
         <span style={{ marginLeft: '.4em', fontWeight: 800 }}>
             enum
         </span>
@@ -105,7 +105,7 @@ const config: DocsThemeConfig = {
             href="https://enumhq.com"
           >
             <div className="nx-flex nx-items-center">
-                <img style={{height:'16px', width: '16px'}} src="https://www.enumhq.com/images/logo.png"/>
+                <img style={{height:'16px', width: '16px'}} src="https://www.enumhq.com/static/images/logo.png"/>
                 <span style={{ marginLeft: '.4em', fontWeight: 800 }}>
                     enum
                 </span>
