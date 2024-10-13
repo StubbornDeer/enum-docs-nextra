@@ -43,8 +43,8 @@ const config: DocsThemeConfig = {
         
         <meta property="og:url" content="https://www.enumhq.com/" />
         <meta property="og:type"               content="article" />
-        <meta property="og:title"              content="Enum. Explore, research, and ask questions of your data from any source." />
-        <meta property="og:description"        content="Explore, research, and ask questions of your data from any source - plain text, files, websites, and more." />
+        <meta property="og:title"              content="Enum. AI Support Plugin for Crisp chat. Train with your website and documents and support your users 24/7. Documentation." />
+        <meta property="og:description"        content="Enum. AI Support Plugin for Crisp chat. Train with your website and documents and support your users 24/7." />
         <meta property="og:image"              content="https://www.enumhq.com/images/twitter-preview.jpg" />
         
         <meta name="twitter:card" content="summary_large_image" />
