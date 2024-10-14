@@ -4,7 +4,7 @@ import { useRouter } from 'next/router'
 
 const logo = (
     <div className="nx-flex nx-items-center">
-        <img style={{height:'16px', width: '16px'}} src="https://www.enumhq.com/static/images/logo.png"/>
+        <img style={{height:'16px', width: '16px'}} src="https://enumhq.com/static/images/logo.png"/>
         <span style={{ marginLeft: '.4em', fontWeight: 800 }}>
             enum
         </span>
@@ -41,14 +41,14 @@ const config: DocsThemeConfig = {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta httpEquiv="Content-Language" content="en" />
         
-        <meta property="og:url" content="https://www.enumhq.com/" />
+        <meta property="og:url" content="https://enumhq.com/" />
         <meta property="og:type"               content="article" />
         <meta property="og:title"              content="Enum. AI Support Plugin for Crisp chat. Train with your website and documents and support your users 24/7. Documentation." />
         <meta property="og:description"        content="Enum. AI Support Plugin for Crisp chat. Train with your website and documents and support your users 24/7." />
-        <meta property="og:image"              content="https://www.enumhq.com/images/twitter-preview.jpg" />
+        <meta property="og:image"              content="https://enumhq.com/images/twitter-preview.jpg" />
         
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image" content="https://www.enumhq.com/images/twitter-preview.jpg" />
+        <meta name="twitter:image" content="https://enumhq.com/images/twitter-preview.jpg" />
         <meta name="twitter:site:domain" content="enumhq.com" />
         <meta name="twitter:url" content="https://enumhq.com" />
 
@@ -105,7 +105,7 @@ const config: DocsThemeConfig = {
             href="https://enumhq.com"
           >
             <div className="nx-flex nx-items-center">
-                <img style={{height:'16px', width: '16px'}} src="https://www.enumhq.com/static/images/logo.png"/>
+                <img style={{height:'16px', width: '16px'}} src="https://enumhq.com/static/images/logo.png"/>
                 <span style={{ marginLeft: '.4em', fontWeight: 800 }}>
                     enum
                 </span>

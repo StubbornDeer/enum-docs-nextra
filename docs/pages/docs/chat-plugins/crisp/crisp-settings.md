@@ -50,7 +50,7 @@ You can select this option to allow our system to collect the stats on the butto
 
 ![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/8e3181d0-afe1-45d4-b468-291121dbc98e)
 
-You can review the statistics for your project in [the corresponding tab](https://www.enumhq.com/docs/guide/projects#statistics).
+You can review the statistics for your project in [the corresponding tab](https://enumhq.com/docs/guide/projects#statistics).
 
 ### Widget settings
 Here, you specify how your chatbot and its responses look:
@@ -229,7 +229,7 @@ When a user clicks the button, it's resolved what you see in your Crisp dashboar
 
 ![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/de7e2095-056f-403f-af46-db5af6d8608f)
 
-When a user clicks this button, the corresponding response and notification will be sent if you set them up as described [here](https://www.enumhq.com/docs/chat-plugins/crisp/crisp-settings#user-requests-human-assistance).
+When a user clicks this button, the corresponding response and notification will be sent if you set them up as described [here](https://enumhq.com/docs/chat-plugins/crisp/crisp-settings#user-requests-human-assistance).
 
 <Callout>
   Sometimes you can see the colorful icons, sometimes not. It all depends on the browser. For example, in Firefox it will look differently:
@@ -351,7 +351,7 @@ Specify how many seconds to wait. From our experience, 4 seconds is good but you
 
 #### Control the chatbot via Crisp bot, or from JavaScript
 
-If you want that the chatbot doesn't start answering immediately, you may pause it until it gets the corresponding signal. The signal can be sent by the Crisp chatbot as described in the article [about the integration of Enum and Crisp chatbots, or controlling it via JavaScript](https://www.enumhq.com/docs/chat-plugins/crisp/communication-with-chatbot).
+If you want that the chatbot doesn't start answering immediately, you may pause it until it gets the corresponding signal. The signal can be sent by the Crisp chatbot as described in the article [about the integration of Enum and Crisp chatbots, or controlling it via JavaScript](https://enumhq.com/docs/chat-plugins/crisp/communication-with-chatbot).
 
 If you don't want such behavior leave the default option (the first one) as is:
 
