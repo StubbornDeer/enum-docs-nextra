@@ -191,6 +191,9 @@ Here is the example notification sent by email:
 
 ![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/5cfe7f85-59ad-432d-9c21-8f597e06f353)
 
+**Note**
+**The chatbot now recognizes when users request assistance, even when initiated by the chatbot itself, and acts accordingly. Previously, the chatbot's decisions were based solely on analyzing the user's request. For example, if a user said, "Connect me to a human agent," it was recognized as a request for human assistance, and the chatbot could send a notification (if this feature was enabled). Now, the chatbot can also base its decision on its own response. For instance, if it replies, "I'm going to pass your request to my human colleagues," it may send the notification as well!**
+
 #### Standard Buttons
 
 Here, you can specify some standard buttons that are attached to every message.
@@ -337,6 +340,16 @@ Here, an example of the schedule:
 ![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/aa5287df-1d0c-45b9-af04-f05650de7733)
 
 Click the *Ok* to close the schedule window, then the *Save changes* button.
+
+#### Automation based on the operators online presence
+Set the chatbot to automatically turn on or off based on your online presence! When you're stepping away from your computer, you can update your status in Crisp, and our chatbot will activate to handle your incoming requests. Here is where you set this up in the Crisp (Settings -> Availability):
+
+![image](https://github.com/user-attachments/assets/4127467d-b44b-4109-bb82-7283b7351353)
+
+When you return, simply change your status, and the chatbot will be disabled until next time. To enable this behavior, toggle one or two switches.
+
+![image](https://github.com/user-attachments/assets/f926ad62-5627-4603-860c-125d84ceea7e)
+
 
 #### Coordinate the chatbot with Crisp Triggers
 If you use Crisp triggers, you may consider using these options to avoid duplicating answers (from triggers and the chatbot).
