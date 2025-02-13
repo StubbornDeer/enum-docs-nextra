@@ -71,11 +71,24 @@ and if you later would like to unlink the data source, click the *Remove* button
 
 
 ## Deleting an agent
+To delete an agent, simply open the list of agents and click the *Delete* button.
 
+![image](https://github.com/user-attachments/assets/aa4f0743-6f99-48c1-befd-71c7cf0d18af)
 
 
 ## Number of agents
 
+The number of agents you can create, depends on your plan. The free plan allow you to create one agent, for the exact amount of agents please refer [the pricing page](https://enumhq.com/#pricing). You always can check the numbers of agents (how many you can create and how many you alrady have) on the *Limits/Usage* page:
+
+![image](https://github.com/user-attachments/assets/32387003-bd07-4e50-a576-111195a24589)
+
+
 ## How to control and manage agents
 
+Every agent has its own description and prompt and can be called even if you project's custom prompt doesn't mentioned them. So, for example, if your agent answer the questions about orders, it will be used as soon as user asks about an order. But if you want an agent to be called conditionally, you need to mention it in the project's custom prompt. For example, you may write "If a user query is in French language, call the Agent_FR. If a user query is in English language, call the Agent_EN".
+
 ## Frequently Asked Questions about Agents
+
+### How is number of messages calculated when using an agent?
+
+It's calculated in the same way as using the chatbot: every single question/text/whatever sent to the chatbot (even if it's processed by an agent, internally) considered as one message.
