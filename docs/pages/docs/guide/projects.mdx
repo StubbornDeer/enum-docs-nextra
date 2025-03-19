@@ -94,10 +94,16 @@ Here is an example of querying with sources:
 
 #### Custom messages
 
-![image](https://github.com/user-attachments/assets/b06e2535-30df-4309-8863-2791a57c3f5e)
+![image](https://github.com/user-attachments/assets/b09bb319-0d0d-439f-b68e-d3a63359ef74)
 
+Currently, there are 4 custom messages you can specify for your chatbot:
 
-Here you can enter messages as a guide for the chatbot on what to say when it doesn't know an answer, and when is asked for human assistance. The third message is useful for a case when you are out of limit with Enum, but don't want your users to be aware of this fact. The default value is "Let me send your enquiry to our colleague who may know the answer."
+1. What the bot says when cannot find an answer
+2. What the bot says when a user asks to talk to a human
+3. What the bot says when you reach the Enum limits
+4. What the bot says if there is a server or OpenAI error
+
+The third message is useful for a case when you are out of limit with Enum, but don't want your users to be aware of this fact. The default value is "Let me send your enquiry to our colleague who may know the answer."
 
 <Callout>
   You can set up these messages that will be used in all your chatbots for the current project unless you provide the same messages for a separate chatbot which has a higher priority.
