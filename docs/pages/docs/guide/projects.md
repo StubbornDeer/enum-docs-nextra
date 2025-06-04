@@ -94,7 +94,8 @@ Here is an example of querying with sources:
 
 #### Custom messages
 
-![image](https://github.com/user-attachments/assets/b09bb319-0d0d-439f-b68e-d3a63359ef74)
+![image](https://github.com/user-attachments/assets/2bc020f4-0300-442a-90a4-f8d0af808bec)
+
 
 Currently, there are 4 custom messages you can specify for your chatbot:
 
