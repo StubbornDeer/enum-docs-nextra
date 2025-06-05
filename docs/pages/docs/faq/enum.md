@@ -177,6 +177,9 @@ You can look at the project's logs to see if there are error messages like this 
 
 ![image](https://github.com/user-attachments/assets/823c78b0-d705-4c7a-8391-268d1c8566ea)
 
+![image](https://github.com/user-attachments/assets/205a6c9e-ab74-4fe7-a489-307b90af3199)
+
+
 <Callout>
   We found the WP hosting is too slow and causes the timeout error on Crisp, so if you need to host your image, you can upload it to Google Docs, make the image public, and provide the direct link. Another option is that we can host icons on our GitHub public repository which is pretty fast and usually, doesn't cause the timeout error.
 </Callout>
