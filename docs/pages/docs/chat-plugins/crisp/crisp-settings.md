@@ -330,7 +330,8 @@ Why would you use this feature? It can enrich your users' experience and collect
 ##### Button-awareness
 You can make the chatbot aware of the clicked button. Each button has the following settings "Send click to the chatbot":
 
-![image](https://github.com/user-attachments/assets/09aaa5db-c907-4e67-a2c3-6b55a583b163)
+![image](https://github.com/user-attachments/assets/82dd3228-99f9-4d6f-86b7-2e2296c011ca)
+
 
 The custom buttons have this setting, as well as the standard feedback buttons (because this data is already sent for "resolve" and "human assistance" buttons).
 
