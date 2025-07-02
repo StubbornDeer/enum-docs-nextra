@@ -112,6 +112,16 @@ The number of chunks to be sent as context can change the results too. Fortunate
 This answer means you reached the limits of usage. Please check your limits on the *Limits/Usage* page (the link to it can be found on the left bottom menu).
 
 
+#### I see now it's possible to select between using OpenAI ChatGPT and OpenAI Assistant. Which one is better? Do you use the CompletionAPI for both?
+
+![image](https://github.com/user-attachments/assets/c3e1f9da-1ffc-421e-ac7c-e25b7938abe7)
+
+We use the Completion API only when working with ChatGPT. When using an OpenAI assistant, we just call their API and get the result. We believe that internally, they still use the same Completion API.
+
+We can't tell you which one provides better results because it's always the combination of data and proper settings that depends on experience. We saw that in some specific cases, the Assistant gave better results, but in many other cases, there was no difference. To figure out which way is better in your specific case, you may want to create an assistant and see how it's working. 
+
+What is definitely worse in Assistance is the data control. You can't see the content, you can't edit it, you can't search over pages, and you can't load a website as a data source. But if you have files that our platform doesn't support yet (like CSV or Excel spreadsheet) it could be the only option.
+
 ## Enum plugin for Crisp
 ### General questions
 
