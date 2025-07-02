@@ -122,6 +122,10 @@ We can't tell you which one provides better results because it's always the comb
 
 What is definitely worse in Assistance is the data control. You can't see the content, you can't edit it, you can't search over pages, and you can't load a website as a data source. But if you have files that our platform doesn't support yet (like CSV or Excel spreadsheet) it could be the only option.
 
+Another difference is with the Assitant, you have more control over how OpenAI handles your queries: you may choose among all the available models, and set up the temperature parameter on your own. So, if this is critical for you, you may prefer using the Assistant.
+
+![image](https://github.com/user-attachments/assets/a93e56f1-c2b5-425f-8cf0-ae327f5ab83f)
+
 ## Enum plugin for Crisp
 ### General questions
 
