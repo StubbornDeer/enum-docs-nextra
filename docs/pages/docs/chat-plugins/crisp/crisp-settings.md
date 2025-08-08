@@ -176,6 +176,17 @@ You can assing one or more Crisp segments when the conversation starts. It may b
 ![image](https://github.com/user-attachments/assets/296bef94-569a-480d-bc82-a25b571bbbac)
 
 
+**Pass the Crisp visitor data to the chatbot**
+
+Add visitor variable names to be passed to the chatbot (without quotes, separated by commas) - you can specify some additional data about the visitor/conversation in the Crisp UI:
+
+<img width="609" height="289" alt="image" src="https://github.com/user-attachments/assets/af077222-285b-461d-924f-9cfd8b2bab14" />
+
+Then, in the chatbot settings, you list all the fields you want to be passed to the chatbot, separated by a comma:
+
+<img width="1046" height="162" alt="image" src="https://github.com/user-attachments/assets/64a97b05-b885-48c5-b170-4f8b8a282bcc" />
+
+
 
 #### User requests human assistance
 Specify what the chatbot should do when user wants to talk to human beings.
