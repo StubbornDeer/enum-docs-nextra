@@ -18,6 +18,12 @@ Selecting this option disables the AI bot, so you can speak to your customers wi
 
 ![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/dea7ff7f-994b-406b-bd1a-29495dbd51ec)
 
+#### Include messages not older than
+
+Conversation messages older than this number of days will not be passed to the chatbot. This function may be useful if some of the conversations contain outdated information. As there is no way to filter messages, you can simply prevent including old messages in the history passed to the chatbot. If not specified, the default value is 14 days.
+
+<img width="580" height="223" alt="image" src="https://github.com/user-attachments/assets/eb0c9e68-df1b-4660-b86f-c52b7a7ebcc9" />
+
 
 #### Data source information
 If you want the chatbot to include the most relevant links in its response, check the *Show source links in response* checkbox.
