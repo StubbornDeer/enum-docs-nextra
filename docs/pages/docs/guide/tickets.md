@@ -1,45 +1,135 @@
 import { Callout, Steps } from 'nextra-theme-docs';
 
-# Ticketing System
+# Ticketing System — Functional Overview (with screenshots)
+
+This ticketing system lets you create, edit, track, and manage tickets with rich text, inline images, properties, comments, history, and filters.
+
+---
+
+## Overview (features)
+
+![Ticketing System Overview](https://github.com/user-attachments/assets/c8bf1702-8bf1-4033-939f-c9054f9bb7ed)
+
+### Main points
+
+- Create and save tickets with title, description, images, and metadata.
+- Rich-text description that supports formatting and inline media.
+- Per-ticket activity history (who changed what and when).
+- Commenting on tickets with edit/remove/reply capabilities.
+- Filter and search tickets by Priority, Type, Status, and Difficulty.
+
+---
+
+## Creating a Ticket
+
+![Create new ticket](https://github.com/user-attachments/assets/2b0efdae-6052-435c-b2e8-83bf506f81c6)
+
+1. Click **Create a ticket**.
+2. Enter a **Title** (required).
+3. Write the **Description** using the rich-text editor.
+4. Set **Priority**, **Type**, **Status**, and **Difficulty**.
+5. Click **Save** to persist the ticket.
+
+---
+
+## Rich-text editor & inline images
+
+![Pasted image in description (map example)](https://github.com/user-attachments/assets/2397af7e-44d9-4dd3-bd6a-1d723367dec8)
+
+- The description editor supports standard rich-text controls (bold, lists, links, alignment).
+
+### Adding images
+
+- You can **paste** or **drag & drop** images directly into the description; images render inline and remain editable.
+- Or, you can add an image from the Internet or upload:
+
+<img width="757" height="494" alt="image" src="https://github.com/user-attachments/assets/c1230b2d-e9bd-401c-b189-7068553fe9f9" />
+
+Click the image button from the toolbar, and then specify its URL, or upload from yor computer:
+
+<img width="805" height="605" alt="image" src="https://github.com/user-attachments/assets/d254ee35-d64b-4639-b3d5-34ad3afa1988" />
+
+  
+- Add explanatory text before or after images to provide context.
+
+---
+
+## Ticket properties
+
+![Properties dropdowns](https://github.com/user-attachments/assets/104a552f-62e7-41fa-8057-ad756535d08a)
+
+Set additional data about ticket for faster and easier organizing tickets.
+
+### Priority
+![Priority options](https://github.com/user-attachments/assets/536f943f-8483-4e1e-827e-9b0e55806023)  
+
+- **Critical**
+- **High**
+- **Medium**
+- **Low**
+
+### Type
+![Type options](https://github.com/user-attachments/assets/0d9b5473-87c0-4cf0-86a2-cda71d2e3750)  
+
+- **Problem**
+- **Bug**
+- **Feature request**
+- **Technical debt**
+
+### Status
+![Status options](https://github.com/user-attachments/assets/69949667-6309-43ec-9654-605b91bed635)  
+
+- **New**
+- **In review**
+- **Planned**
+- **Rejected**
+- **In progress**
+- **Done**
+- **Archived**
+
+### Difficulty
+![Difficulty options](https://github.com/user-attachments/assets/77fd7c98-80b6-4503-9902-063c7bb093aa)  
+
+- **Hard/long**
+- **Medium**
+- **Easy/fast**
+
+---
+
+## Editing and saving
+
+![View mode control (switch to edit)](https://github.com/user-attachments/assets/5bb72cd3-9bae-4f98-ac20-bbce4c82cf06)
+![Edit mode (editable title + editor toolbar)](https://github.com/user-attachments/assets/70fa4a62-84bf-4bd5-a20d-7761afadabe7)
+
+- **Edit**: Make title and description changes in the editor; inline images remain editable.
+- **Save**: Click Save to persist changes; activity/history will log the update.
+
+---
+
+## Comments
+
+- Add comments to discuss or clarify a ticket.
+- Edit or remove your comments.
+
+<img width="825" height="479" alt="image" src="https://github.com/user-attachments/assets/695cf458-639c-4ee7-a03b-0561b62de798" />
+
+## History
+
+Activity history records field changes (e.g., "Status changed from X to Y") with a timestamp and the user who made them.
+
+<img width="694" height="410" alt="image" src="https://github.com/user-attachments/assets/6568e15f-7a04-4881-bb1a-fe6730525ad3" />
 
 
-<img width="3360" height="1954" alt="image" src="https://github.com/user-attachments/assets/c8bf1702-8bf1-4033-939f-c9054f9bb7ed" />
+---
+
+## Filtering & search
+
+- Filter tickets by **Priority**, **Type**, **Status**, and **Difficulty**.
+- Apply filters to narrow results; results are shown as a list and are paginated when necessary.
+- Badges/tags reflect chosen properties for easy scanning.
+- You can select multiple values in the filters:
+
+<img width="1520" height="491" alt="image" src="https://github.com/user-attachments/assets/7dad8add-7ef8-4df5-aed5-e49bad5490ca" />
 
 
-## Creating a new ticket
 
-<img width="1730" height="1058" alt="image" src="https://github.com/user-attachments/assets/2b0efdae-6052-435c-b2e8-83bf506f81c6" />
-
-
-You can paste images right in the content area:
-
-<img width="1024" height="1081" alt="image" src="https://github.com/user-attachments/assets/2397af7e-44d9-4dd3-bd6a-1d723367dec8" />
-
-Add properties using the dropdowns:
-
-<img width="737" height="591" alt="image" src="https://github.com/user-attachments/assets/104a552f-62e7-41fa-8057-ad756535d08a" />
-
-Priority:
-
-<img width="403" height="321" alt="image" src="https://github.com/user-attachments/assets/536f943f-8483-4e1e-827e-9b0e55806023" />
-
-Type:
-
-<img width="406" height="319" alt="image" src="https://github.com/user-attachments/assets/0d9b5473-87c0-4cf0-86a2-cda71d2e3750" />
-
-Status:
-
-<img width="405" height="465" alt="image" src="https://github.com/user-attachments/assets/69949667-6309-43ec-9654-605b91bed635" />
-
-Difficulty:
-
-<img width="406" height="302" alt="image" src="https://github.com/user-attachments/assets/77fd7c98-80b6-4503-9902-063c7bb093aa" />
-
-
-Toggle modes from view
-
-<img width="993" height="775" alt="image" src="https://github.com/user-attachments/assets/5bb72cd3-9bae-4f98-ac20-bbce4c82cf06" />
-
-to edit:
-
-<img width="1000" height="923" alt="image" src="https://github.com/user-attachments/assets/70fa4a62-84bf-4bd5-a20d-7761afadabe7" />
