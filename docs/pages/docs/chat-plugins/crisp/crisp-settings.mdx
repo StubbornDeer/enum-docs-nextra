@@ -407,6 +407,80 @@ If you don't want such behavior leave the default option (the first one) as is:
 
 ![image](https://github.com/StubbornDeer/enum-docs-nextra/assets/91156314/e87c2d6e-3a49-46ce-a4d9-074690bba97e)
 
+### Custom filters
+These settings allow you to set up filters based on specific users' data, such as contact or custom data. 
+
+<img width="1407" height="630" alt="image" src="https://github.com/user-attachments/assets/0dc14710-6744-4c9b-81df-b7378a720600" />
+
+#### Conditions clause
+Select "ANY" or "ALL" from the dropdown ("any" is the default value). If you select "any" it means that the chatbot will ignore the conversation as soon as **any** of conditions in the list are true, and if you select "all" it means that the chatbot will check all the conditions and will pause only when all of the conditions are met.
+
+In the list of filters, you can add as many conditions as you want. The first value is the field name. Here is the typical conversation data:
+
+```
+{
+            'nickname': 'visitor123',
+            'email': '',
+            'phone': '12345678',
+            'avatar': '',
+            'ip': 'xxxxxxxxxxxxxxxxxxxx',
+            'data': {
+                'user_name': 'Philipp',
+                'website': 'https://philmourice.com'
+            },
+            'device': {
+                'geolocation': {
+                    'country': 'CA',
+                    'region': 'BC',
+                    'city': 'Maple Ridge',
+                    'coordinates': {
+                        'latitude': 49.238717, 
+                        'longitude': -122.589587
+                    }
+                },
+                'capabilities': ['browsing', 'call'],
+                'locales': ['en-US', 'en'],
+                'timezone': 420,
+                'system': {
+                    'os': {
+                        'name': 'Windows',
+                        'version': '10'
+                    },
+                    'engine': {
+                        'name': 'Blink',
+                        'version': '139.0.0.0'
+                    },
+                    'browser': {
+                        'name': 'Chrome',
+                        'version': '139.0.0.0',
+                        'major': '139'
+                    },
+                    'useragent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36'
+                }
+            },
+            'segments': ['chat'],
+            'connection': {
+                'isp': 'Shaw Communications Inc.',
+                'asn': '1254'
+            }
+        }
+```
+If you are familiar with the JSON format, using it is not a problem. If you are not familiar, please check [this reference](https://www.freecodecamp.org/news/what-is-json-a-json-file-example/). The idea is we can access any data using the "dot notation". In this example, to get the user_name we will use ```data.user_name``` and to access a city, we will use ```data.geolocation.city```.
+
+The second column is the condition, it has 4 values:
+
+- equal
+- not equal
+- contains
+- doesn't contain.
+
+These values are self-explanatory. For example, if you would like to filter those chats belonging to a specific segment, you would use ```segment``` for a data name and ```contains``` as a condition.
+
+The third column has a value to compare. You can add any value you would like to compare with: it may be numbers, strings, or even objects and lists. 
+
+<Callout>
+  Never use quotes for plain strings. Only use quotas if you specify fields for an object, or elements in the list.
+</Callout>
 
 ### Paused sessions
 
