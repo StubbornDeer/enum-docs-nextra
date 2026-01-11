@@ -24,28 +24,38 @@ Now, the chatbot remembers the context and can keep the conversation. Formally, 
 Extensive language support, including automatic language detection and the ability to communicate in 107 languages
 
 ### Modern models are available
-The models available for "non-key" plans (including the free one):
+Here is the full list of LLMs and models we currently support. If no plan is specified, the model is available for all the plans; "no-key" means a paid plan without an AI key; "key" means you bring your own key.
 
+**OpenAI**
 - GPT-5 nano
+- GPT-5 mini (no-key, key)
+- GPT-5 (key)
+- GPT-4.1 (key)
+- GPT-4.1 mini
+- GPT-4o (key)
+- GPT-4o mini
+- GPT-4 Turbo (key)
+- GPT-4 (key)
 - GPT-3.5 Turbo
-- GPT-4o-mini
+- O1 preview (key)
+- O1-mini (key)
+- O4-mini (key)
+- O3 (key)
+ 
+**Anthropic**
+- Claude 4 Sonnet (no-key, key)
+- Claude 3.5 Sonnet (key)
+- Claude 3 Opus (key)
 - Claude 3 Haiku
 
-The models available for "key" plans:
+**DeepSeek**
+- DeepSeek-V3.2
 
-- GPT-5
-- GPT-5 nano
-- GPT-3.5 Turbo
-- GPT-4o-mini
-- GPT-4o
-- GPT-4.1
-- OpenAI o1-preview (can't be used with Instruments)
-- OpenAI o1-mini (can't be used with Instruments)
-- OpenAI o3
-- OpenAI o4-mini
-- Claude 3 Haiku
-- Claude 3 Opus
-- Claude 3 Sonnet
+**Google GenAI**
+- Gemini 3 Pro (key)
+- Gemini 3 flash (no-key, key)
+- Gemini 2.5 Flash (no-key, key)
+- Gemini 2.5 Flash-Lite
 
 You can also use the OpenAI assistant on the "key" plans.
 
