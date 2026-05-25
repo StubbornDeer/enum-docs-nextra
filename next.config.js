@@ -3,7 +3,5 @@ const withNextra = require('nextra')({
     themeConfig: './theme.config.jsx'
 });
    
-//module.exports = withNextra()
-module.exports = withNextra({
-    basePath: '/docs'
-});
+module.exports = withNextra()
+
